@@ -12,7 +12,7 @@
 <main class="warm">
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href>
                 <img src="images/vrcon_MK3-11.png" alt="VRCon logo"/>
             </a>
 
@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse {isNavExpanded ? 'show' : ''}" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/events/">Events</a>
+                        <a class="nav-link" href="events/">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/staff/">Staff</a>
+                        <a class="nav-link" href="staff/">Staff</a>
                     </li>
                 </ul>
             </div>
