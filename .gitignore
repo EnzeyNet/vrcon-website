@@ -1,0 +1,8 @@
+!public
+
+# Dependency directories
+node_modules/
+
+src
+package*.json
+*.config.js
