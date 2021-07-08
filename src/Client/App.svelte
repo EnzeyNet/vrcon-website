@@ -47,7 +47,7 @@
 
 <style>
     nav.navbar {
-        background-color: var(--color-accent-3);
+        background-color: var(--color-accent-2);
         color: var(--color-web-white);
     }
     nav .container-fluid {
@@ -62,6 +62,9 @@
     nav .navbar-collapse.show  {
         margin-top: unset;
         padding-bottom: 1.5em;
+    }
+    a {
+        color: var(--color-web-dark)
     }
 
     nav img {

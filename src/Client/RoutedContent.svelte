@@ -1,6 +1,6 @@
 <script>
     import pageRouter from 'page'
-    import Welcome from './Components/Welcome.svelte'
+    import Home from './Components/Home.svelte'
     import EventsList from './Components/EventsList.svelte'
     import StaffList from './Components/StaffList.svelte'
 
@@ -16,7 +16,7 @@
     let routeParams = {};
     pageRouter('/', (ctx) => {
         routeParams = ctx.params
-        routeComponent = Welcome
+        routeComponent = Home
     })
     pageRouter('/events/', (ctx) => {
         routeParams = ctx.params
