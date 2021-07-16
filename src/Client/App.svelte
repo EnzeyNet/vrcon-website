@@ -4,7 +4,8 @@
         faBars,
     } from '@fortawesome/free-solid-svg-icons'
 
-	import RoutedContent from './RoutedContent.svelte'
+    import Home from './Components/Home.svelte'
+	//import RoutedContent from './RoutedContent.svelte'
 
     let isNavExpanded = false;
 </script>
@@ -12,7 +13,7 @@
 <main class="warm">
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-            <a class="navbar-brand" href>
+            <a class="navbar-brand" href="#top">
                 <img src="images/vrcon_MK3-11.png" alt="VRCon logo"/>
             </a>
 
@@ -29,27 +30,36 @@
             <div class="collapse navbar-collapse {isNavExpanded ? 'show' : ''}" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href>Home</a>
+                        <a class="nav-link" href="#card-schedule">Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events/">Events</a>
+                        <a class="nav-link" href="#card-stream">Stream</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="staff/">Staff</a>
+                        <a class="nav-link" href="#card-worldlist">World List</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="nav-padding"></div>
 
-    <RoutedContent />
+    <Home />
 </main>
 
 <style>
     nav.navbar {
         background-color: var(--color-accent-2);
         color: var(--color-web-white);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%
     }
+    nav.navbar .navbar-nav .nav-item {
+        margin: 0 1em;
+    }
+
     nav .container-fluid {
         margin-bottom: -1.5em;
     }
@@ -67,8 +77,14 @@
         color: var(--color-web-dark)
     }
 
+    .nav-padding {
+        height: 2.5em;
+    }
     nav img {
         height: 2.5em;
+    }
+    .navbar-brand {
+        padding: 0;
     }
     a.nav-link {
         font-family: "Rubik", Roboto, sans-serif;

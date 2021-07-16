@@ -7,9 +7,16 @@
 
 <div class="guild-list">
     <SplashCard />
-    <StreamCard />
-    <ScheduleCard />
-    <WorldListCard />
+    <div class="section-link" id="card-stream">
+        <StreamCard class="card-content" />
+    </div>
+    <div class="section-link" id="card-schedule">
+        <ScheduleCard class="card-content" />
+    </div>
+    <div class="section-link" id="card-worldlist">
+        <WorldListCard class="card-content" />
+    </div>
+
     <h2>Welcome to VRCon</h2>
     <div class="container">
         <div class="row">
@@ -57,6 +64,10 @@
 </div>
 
 <style>
+    .section-link {
+        margin-top: -2.5em;
+        padding-top: 2.5em;
+    }
     h2 {
         margin: 1em 0;
         font-size: 32px;
