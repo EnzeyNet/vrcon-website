@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="guild-list">
+<div>
     <h2>VRCon Events</h2>
 </div>
 

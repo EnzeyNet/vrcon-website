@@ -19,7 +19,7 @@
 
 <style>
     .StreamCard {
-        background: green;
+        background: lightgray;
         padding: 2em 0;
     }
     .contentBox {
