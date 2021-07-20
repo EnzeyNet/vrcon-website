@@ -4,7 +4,7 @@
 <div class="SplashCard container-fluid">
     <div class="date">
         <div>VRCon 2021</div>
-        <div>Date: Aug. 20th</div>
+        <div>Date: Sep. 9th - 11th</div>
     </div>
 </div>
 

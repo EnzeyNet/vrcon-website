@@ -7,7 +7,8 @@
             <h2>What is VRCon?</h2>
             <div class="desc">
                 <div class="title">"VRCon is a Community Celebration"</div>
-                <div>VRCon is built and designed as a way to celebrate and give back to the Communuty of Social VR, regardless of platform and game</div>
+                <p>VRCon is a community driven social VR convention. This convention celebrates the groups and individuals that are carving a niche in this new market.</p>
+                <p>VRCon is built and designed as a way to celebrate and give back to the Community of Social VR, regardless of platform and game.</p>
             </div>
         </div>
         <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4">

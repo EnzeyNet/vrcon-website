@@ -15,7 +15,7 @@
         color: var(--color-accent-3)
     }
     .details {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: bold;
         padding: 1em 0;
         text-align: center;
