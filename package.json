@@ -10,6 +10,7 @@
     "build": "rollup -c"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@rollup/plugin-commonjs": "17.1.0",

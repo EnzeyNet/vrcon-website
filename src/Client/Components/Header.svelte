@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="#top">
-                <img src="images/vrcon_MK3-11.png" alt="VRCon logo"/>
+                <img src="images/vrcon-logo-color.png" alt="VRCon logo"/>
             </a>
 
             <button
