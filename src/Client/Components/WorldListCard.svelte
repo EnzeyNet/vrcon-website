@@ -67,11 +67,12 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.4em;
         text-align: center;
         padding: 0.2em 0.2em;
         font-weight: bold;
         color: var(--color-web-white);
+        text-shadow: 0.09em 0.08em var(--color-web-dark);
     }
     h2 {
         padding: 1em 0 0 0;
