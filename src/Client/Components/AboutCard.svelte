@@ -24,7 +24,7 @@
         margin: 0;
         font-size: 2em;
         font-weight: bold;
-        color: var(--color-accent-3)
+        color: var(--color-accent-1)
     }
     .caption {
         font-size: 0.8em;

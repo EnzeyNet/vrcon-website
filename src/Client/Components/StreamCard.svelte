@@ -17,7 +17,7 @@
             src={youtubeIntroLink}
             frameborder="0"
         ></iframe>
-        <h2>Trailer/Stream</h2>
+        <h2>Trailer / Stream</h2>
         <div class="stream"></div>
     </div>
 </div>
@@ -61,9 +61,9 @@
     }
     h2 {
         padding: 0;
-        margin: 0;
+        margin: 0.5em 0 0 0;
         font-size: 2em;
         font-weight: bold;
-        color: var(--color-accent-3)
+        color: var(--color-accent-1)
     }
 </style>
