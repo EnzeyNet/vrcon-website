@@ -20,7 +20,6 @@
     setInterval(
         () => {
             currentTime = getCurrentTime(30)
-            console.log(currentTime)
         }, 26 * 1000
     )
 
@@ -36,7 +35,6 @@
 
     const getClassTypeForEvent = (event) => {
         if (!event) return
-        console.log(event)
 
         const eventStartTime = event.timeStart.valueOf()
         const eventEndTime = event.timeEnd.valueOf()
