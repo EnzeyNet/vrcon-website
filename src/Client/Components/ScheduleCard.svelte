@@ -1,5 +1,7 @@
 <script>
     import eventItems from './eventsData';
+    import userNameToVRChatProfile from './hostUserLinks';
+
     import OTM from '../lib/OneToManyMap';
     import { getCurrentTime } from './helpers.js'
 
@@ -50,18 +52,27 @@
             return 'event-is-pending'
         }
     }
+
+    const getVRChatUserLink = (hostName) => {
+        return userNameToVRChatProfile.get(hostName)
+    }
 </script>
 
 <div class="container">
     <h2>Schedule</h2>
-    <div class="details">
+    <div class="events">
     	{#each eventDays as eventDay}
     		<h4>{eventDay}</h4>
-        	{#each Array.from(eventsByDay.get(eventDay)) as event}
-                <div class='{currentTime ? getClassTypeForEvent(event) : ''}'>
+            {#each Array.from(eventsByDay.get(eventDay)) as event}
+                <div class="event-listing {currentTime ? getClassTypeForEvent(event) : ''}">
                     <span class="event-time">{getLocalTime(event.timeStart)}</span>
-                    <span class="event-spacer">|</span>
-                    <span class="event-name">{event.name}</span>
+                    <span class="event-spacer"></span>
+                    <span class="event-name">
+                        <div>{event.name}</div>
+                        {#if event.host}
+                            <div class="event-host-details">Join on <a href={getVRChatUserLink(event.host)}>{event.host}</a></div>
+                        {/if}
+                    </span>
                 </div>
         	{/each}
     	{/each}
@@ -83,19 +94,45 @@
         font-weight: bold;
         color: var(--color-accent-1)
     }
-    .details {
+    .events {
         padding: 0 0 2em 0;
         text-align: left;
         color: var(--color-web-dark)
     }
+
+    .event-listing {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 0 0.6em 0;
+        border-radius: 15px;
+    }
     .event-time {
+        padding: 0.3em 0.6em;
         font-weight: bold;
+        color: var(--color-web-dark)
+    }
+    .event-spacer {
+        margin: 0 0.1em;
+        margin-top: 0.3em;
+        height: 1.4em;
+        border-right: 2px solid var(--color-web-dark);
+        padding-top: 0.3em;
     }
     .event-name {
+        padding: 0.3em 0.6em;
+    }
+    .event-host-details {
+        margin: 0.1em 0 0 1em;
+        font-size: 0.9em;
+        line-height: 1.1em;
+        font-weight: normal;
+        color: var(--color-web-dark);
     }
 
     .event-is-active {
-        color: var(--color-accent-1)
+        color: var(--color-accent-1);
+        background-color: var(--color-accent-3);
+        font-weight: bold;
     }
     .event-is-complete {
         opacity: 0.55;
