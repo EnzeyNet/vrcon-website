@@ -1,23 +1,67 @@
 <script>
+    import eventItems from './eventsData';
+    import { getCurrentTime } from './helpers.js'
+
+    const hostname = location.hostname
+    const hostedEvents = Array.from(eventItems).filter(event => !!event.liveStreamHost)
+    const getCurrentHostedStream = () => {
+        let currentStreamHost = null
+        for (const event of hostedEvents) {
+            const eventStartTime = event.timeStart.valueOf()
+            const eventEndTime = event.timeEnd.valueOf()
+            if (eventStartTime <= currentTime && currentTime < eventEndTime) {
+                return event
+            }
+        }
+    }
+
+    let currentTime = getCurrentTime(30)
+    let currentHostedEvent = getCurrentHostedStream()
+    setInterval(
+        () => {
+            currentTime = getCurrentTime(30)
+            currentHostedEvent = getCurrentHostedStream()
+        }, 26 * 1000
+    )
+
+    // Video: https://www.youtube.com/watch?v=CTYUyBxQ9SU
     const refFrom = '' + window.location.protocol + '//' + window.location.hostname
     const youtubeVideoId = 'CTYUyBxQ9SU'
     const youtubeIntroLink = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&origin=${refFrom}`
+
 </script>
 
 <div class="StreamCard">
-    <!-- Video: https://www.youtube.com/watch?v=CTYUyBxQ9SU -->
     <div class="backgroundFade"></div>
     <div class="contentBox">
-        <iframe
-            id="vrconIntroVideo"
-            title="VRCon intro video"
-            type="text/html"
-            width="640"
-            height="360"
-            src={youtubeIntroLink}
-            frameborder="0"
-        ></iframe>
-        <h2>Trailer / Stream</h2>
+        {#if !!currentHostedEvent}
+            <h2 class="event-title">{currentHostedEvent.name}</h2>
+            <iframe
+                title="VRCon intro video"
+                src="{`https://player.twitch.tv/?channel=${currentHostedEvent.liveStreamHost}&parent=${hostname}&autoplay=true`}"
+                type="text/html"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen="true"
+            ></iframe>
+        {:else}
+            <iframe
+                title="VRCon intro video"
+                src={youtubeIntroLink}
+                type="text/html"
+                width="640"
+                height="360"
+                frameborder="0"
+            ></iframe>
+        {/if}
+        <h2>
+            {#if !!currentHostedEvent}
+                <span>Live</span>
+            {:else}
+                <span>Trailer</span>
+            {/if}
+        </h2>
         <div class="stream"></div>
     </div>
 </div>
@@ -65,5 +109,8 @@
         font-size: 2em;
         font-weight: bold;
         color: var(--color-accent-1)
+    }
+    .event-title {
+        margin: 0 0 0.5em 0;
     }
 </style>
