@@ -1,7 +1,7 @@
 <script>
     import eventItems from './eventsData';
-    import hostUserToProfileMap from './hostUserLinks';
     import OTM from '../lib/OneToManyMap';
+    import { getCurrentTime } from './helpers.js'
 
     const eventsByDay = new OTM()
     for (const event of eventItems) {
@@ -14,6 +14,14 @@
     eventDays.sort()
     eventDays = eventDays.map((e) => new Date(e).toLocaleDateString())
 
+    let currentTime = getCurrentTime(30)
+    setInterval(
+        () => {
+            currentTime = getCurrentTime(30)
+            console.log(currentTime)
+        }, 26 * 1000
+    )
+
     const getLocalTime = (date) => {
         let time = date.toLocaleTimeString()
         time = time.replace(':00 ',' ')
@@ -24,34 +32,39 @@
         return time
     }
 
-    const getVRChatUserLink = (userName) => {
-        if (userName) {
-            const vrcProfileUrl = hostUserToProfileMap.get(userName)
-            if (vrcProfileUrl) {
-                return vrcProfileUrl
-            }
+    const getClassTypeForEvent = (event) => {
+        if (!event) return
+        console.log(event)
+
+        const eventStartTime = event.timeStart.valueOf()
+        const eventEndTime = event.timeEnd.valueOf()
+        const bufferToStart = (3 * 60 * 1000)
+        if (eventStartTime - bufferToStart < currentTime && currentTime < eventEndTime) {
+            // Event in progress
+            return 'event-is-active'
+        } else if (eventStartTime < currentTime) {
+            // Event is over
+            return 'event-is-complete'
+        } else {
+            // Event has not begun
+            return 'event-is-pending'
         }
     }
 </script>
 
-<div class="container events">
+<div class="container">
     <h2>Schedule</h2>
-    <div>
-        {#each eventDays as eventDay}
-            <h4>{eventDay}</h4>
-            {#each Array.from(eventsByDay.get(eventDay)) as event}
-                <div class="event-listing">
+    <div class="details">
+    	{#each eventDays as eventDay}
+    		<h4>{eventDay}</h4>
+        	{#each Array.from(eventsByDay.get(eventDay)) as event}
+                <div class='{currentTime ? getClassTypeForEvent(event) : ''}'>
                     <span class="event-time">{getLocalTime(event.timeStart)}</span>
-                    <span class="event-spacer"></span>
-                    <span class="event-name">
-                        <div>{event.name}</div>
-                        {#if event.host}
-                            <div class="event-host-details">Join on <a href={getVRChatUserLink(event.host)}>{event.host}</a></div>
-                        {/if}
-                    </span>
+                    <span class="event-spacer">|</span>
+                    <span class="event-name">{event.name}</span>
                 </div>
-            {/each}
-        {/each}
+        	{/each}
+    	{/each}
     </div>
 </div>
 
@@ -70,42 +83,24 @@
         font-weight: bold;
         color: var(--color-accent-1)
     }
-    .events {
+    .details {
         padding: 0 0 2em 0;
         text-align: left;
         color: var(--color-web-dark)
     }
-
-    .event-listing {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 0 0 0.6em 0;
-    }
     .event-time {
         font-weight: bold;
-        color: var(--color-web-dark)
-    }
-    .event-spacer {
-        margin: 0 0.8em;
-        height: 1.4em;
-        border-right: 2px solid var(--color-web-dark);
     }
     .event-name {
-        color: var(--color-web-dark)
-    }
-    .event-host-details {
-        margin: 0.1em 0 0 1em;
-        font-size: 0.9em;
-        line-height: 1.1em;
     }
 
-    .event-past {
-        opacity: 0.6;
+    .event-is-active {
+        color: var(--color-accent-1)
     }
-    .event-active {
-        color: var(--color-accent-3);
+    .event-is-complete {
+        opacity: 0.55;
     }
-    .event-active {
+    .event-is-pending {
 
     }
 </style>
