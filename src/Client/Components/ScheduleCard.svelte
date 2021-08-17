@@ -63,7 +63,12 @@
     		<h4>{eventDay}</h4>
             {#each Array.from(eventsByDay.get(eventDay)) as event}
                 <div class="event-listing {currentTime ? getClassTypeForEvent(event) : ''}">
-                    <span class="event-time">{getLocalTime(event.timeStart)}</span>
+                    <span class="event-time">
+                        <div>{getLocalTime(event.timeStart)}</div>
+                        {#if event.liveStreamHost}
+                            <div class="event-stream-details">Streamed</div>
+                        {/if}
+                    </span>
                     <span class="event-spacer"></span>
                     <span class="event-name">
                         <div>{event.name}</div>
@@ -118,6 +123,14 @@
     }
     .event-name {
         padding: 0.3em 0.6em;
+    }
+    .event-stream-details {
+        text-align: center;
+        margin: 0.1em 0 0 0em;
+        font-size: 0.9em;
+        line-height: 1.1em;
+        font-weight: normal;
+        color: var(--color-web-dark);
     }
     .event-host-details {
         margin: 0.1em 0 0 1em;
