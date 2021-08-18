@@ -21,6 +21,7 @@ const data = [
         description: 'Spectate the Muse concert with live performances and special guests!',
         host: 'VRCon2',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-09T21:00:00-04:00'),
@@ -29,6 +30,7 @@ const data = [
         description: 'Join AstroRabbit\'s talk about their experiences in teaching STEM topics in VRChat',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-09T22:00:00-04:00'),
@@ -37,6 +39,7 @@ const data = [
         description: 'A talk about world optimization by Air In',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T03:00:00-04:00'),
@@ -44,6 +47,7 @@ const data = [
         name: 'Casual Hangout',
         description: 'A chill hangout in the VRCon world',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T04:00:00-04:00'),
@@ -76,9 +80,10 @@ const data = [
     {
         timeStart: new Date('2021-09-10T08:00:00-04:00'),
         timeEnd:   new Date('2021-09-10T09:00:00-04:00'),
-        name: 'casual pool',
+        name: 'Casual Pool',
         description: 'Enjoy an informal pool session and meet some new people!',
         host: 'VRCon3',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T09:00:00-04:00'),
@@ -95,6 +100,7 @@ const data = [
         description: 'Talking about the club, which is an anti-social social club. List what we do, when the club happens, different experiences, and what to expect.',
         host: 'VRCon2',
         liveStreamHost: 'okaykuro',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T11:00:00-04:00'),
@@ -102,6 +108,7 @@ const data = [
         name: 'Tygre, The Singing Furry',
         description: 'Join the adorable stripey kitty with a song in their heart for a performance to get you on your feet and your tushies shakin',
         host: 'VRCon3',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T13:00:00-04:00'),
@@ -110,6 +117,7 @@ const data = [
         description: 'Introducing new players to VRChat, what to expect, what VRChat has to offer.',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T14:00:00-04:00'),
@@ -118,6 +126,7 @@ const data = [
         description: 'Showing quest compatible/optimized maps to the new players.',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T14:00:00-04:00'),
@@ -125,6 +134,7 @@ const data = [
         name: 'Pool Tournament',
         description: 'Attendees will participate in a 2v2 Lightning Round 8-ball pool tournament which will be capped at 64 players.',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T16:00:00-04:00'),
@@ -141,6 +151,7 @@ const data = [
         description: 'A discussion and roundtable with guests on how online spaces allow for the exploration and affirmation of different sexual, romantic, and gender identities.',
         host: 'VRCon2',
         liveStreamHost: 'nerdynanny',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T20:00:00-04:00'),
@@ -149,6 +160,7 @@ const data = [
         description: 'It\'s a VRChat Events trivia competition. Not team-based, but able to support many people at once.',
         host: 'ImprovMod',
         liveStreamHost: 'gobloxvr',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T21:00:00-04:00'),
@@ -156,6 +168,7 @@ const data = [
         name: 'What Is VRCRoleplay?',
         description: 'A general \'How to roleplay\' mixed with interviews from the heads of the most prominent open VRCRoleplay groups such as Purple Lotus, Misty Shores, The Lying Fork, and Dream Tree.',
         host: 'VRCon3',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-10T22:00:00-04:00'),
@@ -163,6 +176,7 @@ const data = [
         name: 'VRC Roleplay: Let\'s Get Improvisational!',
         description: 'An improv show with plenty of audience participation!',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T03:00:00-04:00'),
@@ -170,6 +184,7 @@ const data = [
         name: 'Muder Game',
         description: 'Murder is a classic social deduction game. One man has an intent to murder everyone! It is up to you to survive and take down the murderer before he takes you down.',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T04:00:00-04:00'),
@@ -177,6 +192,7 @@ const data = [
         name: 'Quest World Hop',
         description: 'Murder is a classic social deduction game. One man has an intent to murder everyone! It is up to you to survive and take down the murderer before he takes you down.',
         host: 'VRCon2',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T05:00:00-04:00'),
@@ -185,6 +201,7 @@ const data = [
         description: 'This event will let you learn and experience the PVP side of VRChat with an intricate melee and ranged combat system.',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T06:00:00-04:00'),
@@ -209,6 +226,7 @@ const data = [
         description: 'Come and relax while listening to stories performed by Magnanix.',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T09:00:00-04:00'),
@@ -224,6 +242,7 @@ const data = [
         description: 'A small workshop featuring vocal warm-ups as well as critiques for individuals\' voices in VRChat and tips for what they can do to improve their desired sound.',
         host: 'VRCon2',
         liveStreamHost: 'frostedfricks',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T11:00:00-04:00'),
@@ -232,6 +251,7 @@ const data = [
         description: 'Learn the Dos and Don\'ts of Deaf culture with Fearlesskoolaid!',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T12:00:00-04:00'),
@@ -240,6 +260,7 @@ const data = [
         description: 'Stay healthy as we squat the Saturday away together. Don\'t forget to bring water!',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T13:00:00-04:00'),
@@ -248,6 +269,7 @@ const data = [
         description: 'Performance set list including piano, live vocals, backing tracks, etc.',
         host: 'VRCon2',
         liveStreamHost: 'im_naku',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T14:00:00-04:00'),
@@ -256,6 +278,7 @@ const data = [
         description: 'Enjoy AdzySlayer\'s 30-minute set of pure guitar shredding!',
         host: 'VRCon3',
         liveStreamHost: 'adzyslayer',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T14:30:00-04:00'),
@@ -263,6 +286,7 @@ const data = [
         name: 'March with the Kitten Marching Band',
         description: 'Fill the VRChat worlds with warm joy as a member of a Kitten Marching Band! Cat ears included.',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T15:00:00-04:00'),
@@ -292,6 +316,7 @@ const data = [
         name: 'Talent Show',
         description: 'Show off  your crazy, impressive, or wacky Talents and avatars!',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T21:00:00-04:00'),
@@ -303,9 +328,10 @@ const data = [
         timeStart: new Date('2021-09-11T21:30:00-04:00'),
         timeEnd:   new Date('2021-09-11T22:00:00-04:00'),
         name: 'VR Pole Dancing - Next level of fitness',
-        description: 'A routine involving deep warmup and stretching, followed by mixed strength and technique pole dance training,
+        description: 'A routine involving deep warmup and stretching, followed by mixed strength and technique pole dance training',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-11T22:00:00-04:00'),
@@ -319,19 +345,21 @@ const data = [
         name: 'Would you rather',
         description: 'Join us for a quick "would you rather" mini game or face the consequence of missing out!',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T04:00:00-04:00'),
         timeEnd:   new Date('2021-09-12T05:00:00-04:00'),
         name: 'Freeze Tag',
-        description: 'Run as fast as you can, don't let yourself get tagged!',
+        description: 'Run as fast as you can, don\'t let yourself get tagged!',
         host: 'VRCon2',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T05:00:00-04:00'),
         timeEnd:   new Date('2021-09-12T06:00:00-04:00'),
         name: 'Werewolf',
-        description: 'Some within your village are not what they seem to be. Can you work together with the other villagers to discover the werewolves before it''s too late?',
+        description: 'Some within your village are not what they seem to be. Can you work together with the other villagers to discover the werewolves before it\'s too late?',
         host: 'VRCon3',
     },
     {
@@ -340,6 +368,7 @@ const data = [
         name: 'Quest Mini Golf',
         description: 'A casual round of putt-putt, join us as we play through 18 holes.',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T07:00:00-04:00'),
@@ -347,6 +376,7 @@ const data = [
         name: 'Treasure Hunt',
         description: 'A search for buried pirate treasure! A world made by jar',
         host: 'VRCon2',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T08:00:00-04:00'),
@@ -354,6 +384,7 @@ const data = [
         name: 'VR dance showcase by the SXSW2021 champion YOIKAMI',
         description: 'A dance performance by Yoikami',
         host: 'VRCon3',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T09:00:00-04:00'),
@@ -361,6 +392,7 @@ const data = [
         name: 'Community Spotlight: Kitten Marching Band',
         description: 'You heard about them, and you love them, now learn about them! Meet the kitten marching band community and learn more about their daily activities.',
         host: 'VRCon1',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T10:00:00-04:00'),
@@ -376,6 +408,7 @@ const data = [
         description: 'Support and lessons for voice training, both for more feminine and masculine tones. Get a full rundown on how the vocal systems work, the areas of interest, and how to start lessons and training for people\'s preferred voice tone and range. Learn specifics of vocal ranges, techniques to achieve certain tones and styles, and exercises attendees can take with them to continue in their own time.',
         host: 'VRCon3',
         liveStreamHost: 'virtualilly',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T12:30:00-04:00'),
@@ -391,6 +424,7 @@ const data = [
         description: 'We will hold a class with different teachers to show bits and pieces of their language. ',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T14:00:00-04:00'),
@@ -398,6 +432,7 @@ const data = [
         name: 'The Amazing Spider-Lair Experience',
         description: 'Join The Spider-Lair and discover the action-packed wall-crawling, web-swinging hangout world! ',
         host: 'VRCon3',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T15:00:00-04:00'),
@@ -406,6 +441,7 @@ const data = [
         description: 'A hands-on class introducing the basics and advanced techniques for operating virtual camera \'VRCLens\' created by Hirabiki. This workshop is perfect for photography & film enthusiasts interested in getting the best out of their camera. VRCLens avatar will be provided at the event. ',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T16:00:00-04:00'),
@@ -414,6 +450,7 @@ const data = [
         description: 'CyberChimp showcase some of his greatest performance avatars. You\'re sure to catch some laughs here!',
         host: 'VRCon2',
         liveStreamHost: 'cyberchimptv',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T17:00:00-04:00'),
@@ -422,6 +459,7 @@ const data = [
         description: 'Live telling of Horror Stories. ',
         host: 'VRCon3',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T18:00:00-04:00'),
@@ -430,6 +468,7 @@ const data = [
         description: 'Q & A For the VRChat Movie',
         host: 'VRCon1',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T19:00:00-04:00'),
@@ -438,6 +477,7 @@ const data = [
         description: 'VR Thought Party or The Choice to Abandon Biological Reality',
         host: 'VRCon2',
         liveStreamHost: 'vrconlive',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T20:00:00-04:00'),
@@ -446,6 +486,7 @@ const data = [
         description: 'Introductory lesson on how to belly dance in VR',
         host: 'VRCon3',
         liveStreamHost: 'dustydustbunny',
+        isQuestCompatible: true,
     },
     {
         timeStart: new Date('2021-09-12T21:00:00-04:00'),
@@ -456,8 +497,8 @@ const data = [
         liveStreamHost: 'gobloxvr',
     },
     {
-        timeStart: new Date('2021-09-12T20:00:00-04:00'),
-        timeEnd:   new Date('2021-09-12T21:00:00-04:00'),
+        timeStart: new Date('2021-09-12T22:00:00-04:00'),
+        timeEnd:   new Date('2021-09-12T23:00:00-04:00'),
         name: 'Closing Ceremony',
         description: 'Join the VRCon team as we recap many of the unforgettable moments from this weekend.',
         isStreamed: true,

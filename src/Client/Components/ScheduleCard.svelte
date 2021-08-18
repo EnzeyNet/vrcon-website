@@ -72,9 +72,15 @@
                     <span class="event-spacer"></span>
                     <span class="event-name">
                         <div>{event.name}</div>
-                        {#if event.host}
-                            <div class="event-host-details">Join on <a href={getVRChatUserLink(event.host)}>{event.host}</a></div>
-                        {/if}
+                        <div class="event-description">{event.description}</div>
+                        <div class="event-joinable">
+                            {#if event.isQuestCompatible}
+                                <div class="event-quest-compatible">Quest Supported</div>
+                            {/if}
+                            {#if event.host}
+                                <div class="event-host-details">Join on <a href={getVRChatUserLink(event.host)}>{event.host}</a></div>
+                            {/if}
+                        </div>
                     </span>
                 </div>
         	{/each}
@@ -106,13 +112,14 @@
     .event-listing {
         display: flex;
         flex-wrap: nowrap;
-        margin: 0 0 0.6em 0;
+        margin: 0 0 1.8em 0;
         border-radius: 15px;
     }
     .event-time {
         padding: 0.3em 0.6em;
         font-weight: bold;
-        color: var(--color-web-dark)
+        color: var(--color-web-dark);
+        white-space: nowrap;
     }
     .event-spacer {
         margin: 0 0.1em;
@@ -132,12 +139,30 @@
         font-weight: normal;
         color: var(--color-web-dark);
     }
-    .event-host-details {
-        margin: 0.1em 0 0 1em;
+    .event-description {
+        margin: 0.3em 0 0 0em;
         font-size: 0.9em;
         line-height: 1.1em;
         font-weight: normal;
-        color: var(--color-web-dark);
+    }
+    .event-joinable {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 0.9em;
+        margin: 0.3em 0 0.2em 0;
+        line-height: 1.1em;
+        font-weight: normal;
+    }
+    .event-quest-compatible {
+        border-radius: 10px;
+        padding: 0.3em 0.5em;
+        margin: 0 0 0 1em;
+        background-color: var(--color-web-dull);
+        color: var(--color-accent-3);
+    }
+    .event-host-details {
+        padding: 0.3em;
+        margin: 0 0 0 1em;
     }
 
     .event-is-active {
