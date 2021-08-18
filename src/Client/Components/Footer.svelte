@@ -48,6 +48,7 @@ import {
             <img src="images/vrcon-logo-bw.png" alt="VRCon logo"/>
         </div>
     </div>
+
 </div>
 
 <style>
