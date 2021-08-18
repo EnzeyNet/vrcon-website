@@ -58,6 +58,7 @@
 
 <div class="container">
     <h2>Schedule</h2>
+    <div class="event-time-message">Event times are displayed in user local time</div>
     <div class="events">
     	{#each eventDays as eventDay}
     		<h4>{eventDay}</h4>
@@ -102,6 +103,10 @@
         font-size: 1.4em;
         font-weight: bold;
         color: var(--color-accent-1)
+    }
+    .event-time-message {
+        margin: 0.6em;
+        color: var(--color-web-dark);
     }
     .events {
         padding: 0 0 2em 0;
