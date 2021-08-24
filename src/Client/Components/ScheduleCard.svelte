@@ -1,6 +1,6 @@
 <script>
-    import eventItems from './eventsData';
-    import userNameToVRChatProfile from './hostUserLinks';
+    import eventItems from '../data/eventsData';
+    import userNameToVRChatProfile from '../data/hostUserLinks';
 
     import OTM from '../lib/OneToManyMap';
     import { getCurrentTime } from './helpers.js'

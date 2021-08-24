@@ -1,5 +1,5 @@
 <script>
-    import eventItems from './eventsData';
+    import eventItems from '../data/eventsData';
     import { getCurrentTime } from './helpers.js'
 
     const hostname = location.hostname
