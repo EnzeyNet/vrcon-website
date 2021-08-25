@@ -4,8 +4,12 @@
 <div class="Worlds">
     <div class="container">
         <h2>World List</h2>
-
+<!--->
         <h3>2021</h3>
+        <div class="WorldList">
+        </div>
+<--->
+        <h3>2020</h3>
         <div class="WorldList">
             <a class="WorldCard" href="https://vrch.at/wrld_da7b0546-0855-492f-a910-9562d255e019">
                 <img alt="VRCon Confrence Room" src="images/Worlds/005.png" />
@@ -15,10 +19,6 @@
                 <img alt="VRCon Billards" src="images/Worlds/003.png" />
                 <div class="WorldName">VRCon Billards</div>
             </a>
-        </div>
-
-        <h3>2020</h3>
-        <div class="WorldList">
             <a class="WorldCard" href="https://vrch.at/wrld_56b13c26-6eef-4bfa-8f56-bfbb0e44e76a">
                 <img alt="VRCon 2020 Day" src="images/Worlds/001.png" />
                 <div class="WorldName">VRCon 2020 Day</div>
@@ -91,5 +91,6 @@
         padding: 0;
         font-size: 1.6em;
         font-weight: bold;
+        color: var(--color-accent-3)
     }
 </style>
