@@ -113,4 +113,8 @@
     .event-title {
         margin: 0 0 0.5em 0;
     }
+    iframe {
+        width: min(640px, 80vw);
+        height: min(360px, 45vw);
+    }
 </style>
