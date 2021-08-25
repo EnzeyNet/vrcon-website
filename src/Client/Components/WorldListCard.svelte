@@ -89,7 +89,7 @@
     h3 {
         margin: 1em 0;
         padding: 0;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: bold;
     }
 </style>
