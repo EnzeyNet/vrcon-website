@@ -40,6 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#card-about">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card-contacts">Contacts</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -7,12 +7,12 @@ const data = [
     },
     {
         name: 'Fizzi',
-        icon: 'images/Users/fizzi-128.gif',
+        icon: 'images/Users/fizzi-128.png',
         discordId: 'Fizzi#0001',
     },
     {
         name: 'Yaas',
-        icon: 'images/Users/yass.png',
+        icon: 'images/Users/yaas.png',
         discordId: 'Yaas#3399',
     },
     {

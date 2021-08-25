@@ -1,0 +1,57 @@
+<script>
+    import Icon from 'svelte-awesome';
+    import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+
+    import userData from '../data/staffDetails';
+</script>
+
+<div class="staff-list container-fluid">
+    <h2>Contacts</h2>
+
+    <div class="staff-user-details">
+        {#each Array.from(userData) as user}
+            <div class="staff-info">
+                <img src={user.icon} alt="User icon for {user.name}"/>
+                <div>
+                    <div class="staff-user-name">{user.name}</div>
+                    <div><Icon data={faDiscord} scale="1"/> {user.discordId}</div>
+                </div>
+            </div>
+        {/each}
+    </div>
+</div>
+
+<style>
+    h2 {
+        padding: 1em 0 0 0;
+        margin: 0;
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--color-accent-1)
+    }
+    .staff-list {
+        color: var(--color-web-dark)
+    }
+    .staff-user-details {
+        padding: 0 0 2em 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .staff-info {
+        padding: 2em 2em 0 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    .staff-info img {
+        height: 3em;
+        width: 3em;
+        margin: 0 1em 0 0;
+        border-radius: 30%;
+    }
+    .staff-user-name {
+        font-weight: bold;
+    }
+</style>
