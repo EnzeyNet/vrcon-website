@@ -5,6 +5,19 @@
     <div class="container">
         <h2>World List</h2>
 
+        <h3>2021</h3>
+        <div class="WorldList">
+            <a class="WorldCard" href="https://vrch.at/wrld_da7b0546-0855-492f-a910-9562d255e019">
+                <img alt="VRCon Confrence Room" src="images/Worlds/005.png" />
+                <div class="WorldName">VRCon Confrence Room</div>
+            </a>
+            <a class="WorldCard" href="https://vrch.at/wrld_ba4a03a2-26dd-4597-a5a5-924d795c4279">
+                <img alt="VRCon Billards" src="images/Worlds/003.png" />
+                <div class="WorldName">VRCon Billards</div>
+            </a>
+        </div>
+
+        <h3>2020</h3>
         <div class="WorldList">
             <a class="WorldCard" href="https://vrch.at/wrld_56b13c26-6eef-4bfa-8f56-bfbb0e44e76a">
                 <img alt="VRCon 2020 Day" src="images/Worlds/001.png" />
@@ -18,14 +31,6 @@
                 <img alt="VRCon 2020 Stage" src="images/Worlds/004.png" />
                 <div class="WorldName">VRCon 2020 Stage</div>
             </a>
-            <a class="WorldCard" href="https://vrch.at/wrld_da7b0546-0855-492f-a910-9562d255e019">
-                <img alt="VRCon Confrence Room" src="images/Worlds/005.png" />
-                <div class="WorldName">VRCon Confrence Room</div>
-            </a>
-            <a class="WorldCard" href="https://vrch.at/wrld_ba4a03a2-26dd-4597-a5a5-924d795c4279">
-                <img alt="VRCon Billards" src="images/Worlds/003.png" />
-                <div class="WorldName">VRCon Billards</div>
-            </a>
         </div>
     </div>
 </div>
@@ -38,7 +43,7 @@
     }
 
     .WorldList {
-        margin: 0 0 3em 0;
+        margin: 1em 0 0 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -46,7 +51,7 @@
     }
     .WorldCard {
         position: relative;
-        margin: 3.5em 3em 0 0;
+        margin: 0 3em 3.5em 0;
         max-width: 100%;
         box-shadow: 3px 3px var(--color-accent-2);
         color: var(--color-web-white);
@@ -80,5 +85,11 @@
         font-size: 2em;
         font-weight: bold;
         color: var(--color-accent-3)
+    }
+    h3 {
+        margin: 1em 0;
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 </style>
