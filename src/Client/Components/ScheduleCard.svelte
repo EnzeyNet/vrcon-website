@@ -67,7 +67,12 @@
                     <span class="event-time">
                         <div>{getLocalTime(event.timeStart)}</div>
                         {#if event.liveStreamHost}
-                            <div class="event-stream-details">Streamed</div>
+                            <div class="event-stream-details">Streamed by</div>
+                            <div>
+                                <a href="{`https://twitch.tv/${event.liveStreamHost}`}">
+                                    <span>{event.liveStreamHost}</span>
+                                </a>
+                            </div>
                         {/if}
                     </span>
                     <span class="event-spacer"></span>
@@ -75,11 +80,17 @@
                         <div>{event.name}</div>
                         <div class="event-description">{event.description}</div>
                         <div class="event-joinable">
+                            {#if event.hostedBy}
+                                <div class="event-host-details">Hosted by {event.hostedBy}</div>
+                            {/if}
+                            {#if event.signUp}
+                                <div class="event-host-details">Sign up <a href={event.signUp}>here</a> to join the event</div>
+                            {/if}
+                            {#if event.joinOn}
+                                <div class="event-host-details">Join on <a href={getVRChatUserLink(event.joinOn)}>{event.joinOn}</a></div>
+                            {/if}
                             {#if event.isQuestCompatible}
                                 <div class="event-quest-compatible">Quest Supported</div>
-                            {/if}
-                            {#if event.host}
-                                <div class="event-host-details">Join on <a href={getVRChatUserLink(event.host)}>{event.host}</a></div>
                             {/if}
                         </div>
                     </span>
@@ -137,9 +148,8 @@
         padding: 0.3em 0.6em;
     }
     .event-stream-details {
-        text-align: center;
         margin: 0.1em 0 0 0em;
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.1em;
         font-weight: normal;
         color: var(--color-web-dark);
