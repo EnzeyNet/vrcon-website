@@ -160,7 +160,7 @@ const data = [
         name: 'Dance Cypher',
         description: 'A dance event where everyone gathers around a DJ joining in and getting a chance to groove, enjoy music and demonstrate their musicality and technicality.',
         joinOn: 'VRCon1',
-        hostedBy: 'GGDuh#9775',
+        hostedBy: 'GGDuh',
         liveStreamHost: 'ida_vrc_irl',
     },
     {
