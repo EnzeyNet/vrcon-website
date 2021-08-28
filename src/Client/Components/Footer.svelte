@@ -4,7 +4,6 @@ import Icon from 'svelte-awesome';
 import {
     faDiscord,
     faYoutube,
-    faTiktok,
     faTwitch,
     faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
@@ -15,7 +14,7 @@ import {
     <div class="footer-section">
         <h3>Socials</h3>
         <div class="footer-list">
-            <a class="socials-link" href="https://discord.com/channels/687897964290900044/687904257319632915/851542894534983760">
+            <a class="socials-link" href="https://discord.gg/HHCDCVEd">
                 <Icon data={faDiscord} scale="2"/>
                 <div class="link-name">Discord</div>
             </a>
@@ -26,10 +25,6 @@ import {
             <a class="socials-link" href="https://www.twitch.tv/vrconlive">
                 <Icon data={faTwitch} scale="2"/>
                 <div class="link-name">Twitch</div>
-            </a>
-            <a class="socials-link" href="https://www.tiktok.com/tag/vrcon">
-                <Icon data={faTiktok} scale="2"/>
-                <div class="link-name">TikTok</div>
             </a>
             <a class="socials-link" href="https://www.youtube.com/channel/UChw2aYpVo1N3aKzHfTmmGog">
                 <Icon data={faYoutube} scale="2"/>
