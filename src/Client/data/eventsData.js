@@ -518,7 +518,7 @@ const data = [
     {
         timeStart: new Date('2021-09-12T19:00:00-04:00'),
         timeEnd:   new Date('2021-09-12T20:00:00-04:00'),
-        name: 'Boneworks dev talk on future of VR',
+        name: 'BONEWORKS dev talk on Future of VR',
         description: 'VR Thought Party or The Choice to Abandon Biological Reality.',
         joinOn: 'VRCon2',
         hostedBy: 'AK0 from StressLevelZero',
