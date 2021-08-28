@@ -2,14 +2,14 @@
 </script>
 
 <div class="SplashCard container-fluid">
-    <div class="date">
-        <div>VRCon 2021</div>
-        <div>Date: Sep. 9th - 12th</div>
-    </div>
+    <div class="date">2021</div>
 </div>
 
 <style>
     .SplashCard {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         height: 40vh;
         min-height: 130px;
         background: gray;
@@ -21,9 +21,11 @@
         background-position: center;
     }
     .date {
-        padding: 0.2em 0.3em;
-        font-size: 2em;
-        font-weight: bold;
-        color: var(--color-accent-3);
+        font-size: 10em;
+        font-family: "Rubik", Roboto, sans-serif;
+        text-align: center;
+        font-weight: 800;
+        color: var(--color-web-white);
+        text-shadow: 3px 3px var(--color-web-dark);
     }
 </style>
