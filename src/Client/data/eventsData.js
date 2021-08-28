@@ -180,6 +180,7 @@ const data = [
         description: 'A general \'How to roleplay\' mixed with interviews from the heads of the most prominent open VRCRoleplay groups such as Purple Lotus, Misty Shores, and Dream Tree. Followed by an improv show with plenty of audience participation!',
         joinOn: 'VRCon3',
         hostedBy: 'Jowbowl, Sugarcoated Witch, and Satchi',
+        liveStreamHost: 'jowlbowl',
         isQuestCompatible: true,
     },
     {
@@ -448,14 +449,6 @@ const data = [
         hostedBy: 'VRCon',
         liveStreamHost: 'VRConlive',
         isQuestCompatible: true,
-    },
-    {
-        timeStart: new Date('2021-09-12T12:30:00-04:00'),
-        timeEnd:   new Date('2021-09-12T13:00:00-04:00'),
-        name: 'Film Festival Watch Party',
-        description: 'Join us to watch submissions for the VRCon Film Festival!',
-        joinOn: 'VRCon2',
-        hostedBy: 'VRCon',
     },
     {
         timeStart: new Date('2021-09-12T13:00:00-04:00'),
