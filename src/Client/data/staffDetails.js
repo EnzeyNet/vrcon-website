@@ -1,7 +1,7 @@
 
 const data = [
     {
-        name: 'Bagle',
+        name: 'LilBagel',
         icon: 'images/Users/bagle-128.gif',
         discordId: 'LilBagel#0001',
     },
