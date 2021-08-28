@@ -1,7 +1,4 @@
 <script>
-    import Icon from 'svelte-awesome';
-    import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-
     import userData from '../data/staffDetails';
 </script>
 
@@ -14,7 +11,7 @@
                 <img src={user.icon} alt="User icon for {user.name}"/>
                 <div>
                     <div class="staff-user-name">{user.name}</div>
-                    <div><Icon data={faDiscord} scale="1"/> {user.discordId}</div>
+                    <div>{user.email}</div>
                 </div>
             </div>
         {/each}

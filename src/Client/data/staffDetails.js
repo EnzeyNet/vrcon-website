@@ -3,23 +3,26 @@ const data = [
     {
         name: 'LilBagel',
         icon: 'images/Users/bagle-128.gif',
-        discordId: 'LilBagel#0001',
+        email: 'ethan@vrcon.online',
     },
     {
         name: 'Fizzi',
         icon: 'images/Users/fizzi-128.png',
-        discordId: 'Fizzi#0001',
+        email: 'giovanni@vrcon.online',
     },
     {
         name: 'Yaas',
         icon: 'images/Users/yaas.png',
-        discordId: 'Yaas#3399',
+        email: 'yaas@vrcon.online',
     },
     {
         name: 'VirtuaLilly',
         icon: 'images/Users/lilly-128.png',
-        discordId: 'VirtuaLilly#0001',
+        email: 'lilly@vrcon.online',
     },
 ]
+
+
+
 
 export default data;
