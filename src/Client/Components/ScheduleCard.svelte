@@ -68,7 +68,7 @@
                         <div>{getLocalTime(event.timeStart)}</div>
                         {#if event.liveStreamHost}
                             <div class="event-stream-details">Streamed by</div>
-                            <div>
+                            <div class="event-stream-details">
                                 <a href="{`https://twitch.tv/${event.liveStreamHost}`}">
                                     <span>{event.liveStreamHost}</span>
                                 </a>
