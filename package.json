@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "startServer": "node src/Server/serveBackend.js",
-    "startClient": "rollup -c && node src/Server/serveClient.js",
+    "startClient": "npm run build && node src/Server/serveClient.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "build": "rollup -c"
+    "build-clean": "node .compile/deleteFolder build",
+    "build-static": "node .compile/copyFolder static build",
+    "build-js": "rollup -c",
+    "build": "npm run build-clean && npm run build-static && npm run build-js"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",

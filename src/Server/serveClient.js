@@ -17,8 +17,8 @@ if (!isLocalDev) {
     })
 }
 
-app.use(express.static('public'));
-const indexFile = path.join(path.resolve(), 'public', 'index.html')
+app.use(express.static('build'));
+const indexFile = path.join(path.resolve(), 'build', 'index.html')
 app.get('*', function(req, res){
   res.sendFile(indexFile);
 });
