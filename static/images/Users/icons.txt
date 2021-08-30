@@ -1,4 +1,0 @@
-{
-	"lilly": "https://cdn.discordapp.com/avatars/259065723421196289/587bada0ac13094d2b22a924a735e1cf.png?size=128",
-	"bagle": "https://cdn.discordapp.com/avatars/398344381154721803/a_48e80abd1a119782976ab3ef7688641e.gif?size=128"
-}
