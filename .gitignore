@@ -4,5 +4,6 @@
 node_modules/
 
 src
+build
 package*.json
 *.config.js
