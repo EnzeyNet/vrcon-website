@@ -1,10 +1,11 @@
 <script>
 </script>
-
+<!--
 <div class="SplashCard container-fluid">
     <div class="date">2021</div>
 </div>
-
+-->
+<img src="/images/splash_image_2.png" alt="VRCon intro logo">
 <style>
     .SplashCard {
         display: flex;
@@ -27,5 +28,8 @@
         font-weight: 800;
         color: var(--color-web-white);
         text-shadow: 3px 3px var(--color-web-dark);
+    }
+    img {
+        width: 100%;
     }
 </style>
