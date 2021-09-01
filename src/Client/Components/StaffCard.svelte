@@ -2,7 +2,7 @@
     import userData from '../data/staffDetails';
 </script>
 
-<div class="staff-list container-fluid">
+<div class="staff-list container">
     <h2>Contacts</h2>
 
     <div class="staff-user-details">
