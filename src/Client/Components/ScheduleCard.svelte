@@ -59,6 +59,12 @@
 <div class="container">
     <h2>Schedule</h2>
     <div class="event-time-message">Event times are displayed in user local time</div>
+    <div class="event-disclaimer-title">Disclaimer</div>
+    <div class="event-disclaimer-body">
+        <div>VRCon events are free but may have limited capacity and admission is first come first serve.</div>
+        <div>Please wear a medium or better performing avatar!</div>
+    </div>
+
     <div class="events">
     	{#each eventDays as eventDay}
     		<h4>{eventDay}</h4>
@@ -116,7 +122,15 @@
         color: var(--color-accent-1)
     }
     .event-time-message {
-        margin: 0.6em;
+        margin: 0.6em 0;
+        color: var(--color-web-dark);
+    }
+    .event-disclaimer-title {
+        font-weight: bold;
+        color: var(--color-web-dark);
+    }
+    .event-disclaimer-body {
+        font-style: italic;
         color: var(--color-web-dark);
     }
     .events {
