@@ -31,7 +31,7 @@ setInterval(
 const parseDate = (str) => {
     const d = new Date(str)
     if (isNaN(d.valueOf())) {
-        console.log('failed to parse date: ${str}')
+        console.error('failed to parse date: ${str}')
     }
     return d
 };
