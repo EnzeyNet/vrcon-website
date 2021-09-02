@@ -1,5 +1,9 @@
 <script>
     import OTM from '../lib/OneToManyMap';
+    import {
+        getLocaleDayDisplay,
+        getLocaleTimeDisplay
+    } from '../lib/formatter';
     import { eventData, eventHostLinks, currentTime } from '../dataStore.js'
 
     let userNameToVRChatProfile = {}
@@ -7,49 +11,10 @@
 		userNameToVRChatProfile = value;
 	});
 
-    const localeTimeFormatConfig =  { hour: '2-digit', minute: '2-digit' }
-    const localeTimeFormat = new Intl.DateTimeFormat([], localeTimeFormatConfig)
-    const localeTimeFormatFallback = new Intl.DateTimeFormat('en-US', localeTimeFormatConfig)
-
-    const localeDayFormatConfig = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    }
-    const localeDayFormat = new Intl.DateTimeFormat([], localeDayFormatConfig)
-    const localeDayFormatFallback = new Intl.DateTimeFormat('en-US', localeDayFormatConfig)
-
-    const getLocalDayDisplay = (date) => {
-        let localeDateDisplay = null
-        try {
-            localeDateDisplay = localeDayFormat.format(date)
-        } catch (e) {
-            console.error('faied to format date')
-        }
-        if (!localeDateDisplay) {
-            localeDateDisplay = localeDayFormatFallback.format(date)
-        }
-        return localeDateDisplay
-    }
-
-    const getLocalTimeDisplay = (date) => {
-        let localeTimeDisplay = null
-        try {
-            localeTimeDisplay = localeTimeFormat.format(date)
-        } catch (e) {
-            console.error('faied to format time')
-        }
-        if (!localeTimeDisplay) {
-            localeTimeDisplay = localeTimeFormatFallback.format(date)
-        }
-        return localeTimeDisplay
-    }
-
     const groupEventsByDay = () => {
         const eventsByDay = new OTM()
         for (const event of eventItems) {
-            const localStartDay = getLocalDayDisplay(event.timeStart)
+            const localStartDay = getLocaleDayDisplay(event.timeStart)
             eventsByDay.add(localStartDay, event)
         }
         return eventsByDay
@@ -59,7 +24,7 @@
         let eventDays = Array.from(eventsByDay.keys())
         eventDays = eventDays.map((e) => new Date(e).valueOf())
         eventDays.sort()
-        eventDays = eventDays.map((e) => getLocalDayDisplay(new Date(e)))
+        eventDays = eventDays.map((e) => getLocaleDayDisplay(new Date(e)))
         return eventDays
     }
 
@@ -73,7 +38,7 @@
 	});
 
     const getLocalTime = (date) => {
-        let time = getLocalTimeDisplay(date)
+        let time = getLocaleTimeDisplay(date)
         return time
     }
 
