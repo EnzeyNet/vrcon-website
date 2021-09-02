@@ -7,18 +7,43 @@
 		userNameToVRChatProfile = value;
 	});
 
-    const getLocalDayDisplay = (date) => {
-        const dateConfig = {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        }
-        return date.toLocaleDateString([], dateConfig)
+    const localeTimeFormatConfig =  { hour: '2-digit', minute: '2-digit' }
+    const localeTimeFormat = new Intl.DateTimeFormat([], localeTimeFormatConfig)
+    const localeTimeFormatFallback = new Intl.DateTimeFormat('en-US', localeTimeFormatConfig)
+
+    const localeDayFormatConfig = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
     }
+    const localeDayFormat = new Intl.DateTimeFormat([], localeDayFormatConfig)
+    const localeDayFormatFallback = new Intl.DateTimeFormat('en-US', localeDayFormatConfig)
+
+    const getLocalDayDisplay = (date) => {
+        let localeDateDisplay = null
+        try {
+            localeDateDisplay = localeDayFormat.format(date)
+        } catch (e) {
+            console.error('faied to format date')
+        }
+        if (!localeDateDisplay) {
+            localeDateDisplay = localeDayFormatFallback.format(date)
+        }
+        return localeDateDisplay
+    }
+
     const getLocalTimeDisplay = (date) => {
-        const dateConfig = { hour: '2-digit', minute: '2-digit' }
-        return date.toLocaleTimeString([], dateConfig)
+        let localeTimeDisplay = null
+        try {
+            localeTimeDisplay = localeTimeFormat.format(date)
+        } catch (e) {
+            console.error('faied to format time')
+        }
+        if (!localeTimeDisplay) {
+            localeTimeDisplay = localeTimeFormatFallback.format(date)
+        }
+        return localeTimeDisplay
     }
 
     const groupEventsByDay = () => {
