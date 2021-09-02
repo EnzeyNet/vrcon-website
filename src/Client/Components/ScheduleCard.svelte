@@ -7,10 +7,24 @@
 		userNameToVRChatProfile = value;
 	});
 
+    const getLocalDayDisplay = (date) => {
+        const dateConfig = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        }
+        return date.toLocaleDateString([], dateConfig)
+    }
+    const getLocalTimeDisplay = (date) => {
+        const dateConfig = { hour: '2-digit', minute: '2-digit' }
+        return date.toLocaleTimeString([], dateConfig)
+    }
+
     const groupEventsByDay = () => {
         const eventsByDay = new OTM()
         for (const event of eventItems) {
-            const localStartDay = event.timeStart.toLocaleDateString()
+            const localStartDay = getLocalDayDisplay(event.timeStart)
             eventsByDay.add(localStartDay, event)
         }
         return eventsByDay
@@ -20,7 +34,7 @@
         let eventDays = Array.from(eventsByDay.keys())
         eventDays = eventDays.map((e) => new Date(e).valueOf())
         eventDays.sort()
-        eventDays = eventDays.map((e) => new Date(e).toLocaleDateString())
+        eventDays = eventDays.map((e) => getLocalDayDisplay(new Date(e)))
         return eventDays
     }
 
@@ -34,12 +48,7 @@
 	});
 
     const getLocalTime = (date) => {
-        let time = date.toLocaleTimeString()
-        time = time.replace(':00 ',' ')
-        const fourDigTime = /[0-9]{2}:[0-9]{2}/
-        if (!fourDigTime.test(time)) {
-            time = '0' + time
-        }
+        let time = getLocalTimeDisplay(date)
         return time
     }
 
