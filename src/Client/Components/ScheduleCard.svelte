@@ -1,27 +1,37 @@
 <script>
-    import eventItems from '../data/eventsData';
-    import userNameToVRChatProfile from '../data/hostUserLinks';
-
     import OTM from '../lib/OneToManyMap';
-    import { getCurrentTime } from './helpers.js'
+    import { eventData, eventHostLinks, currentTime } from '../dataStore.js'
 
-    const eventsByDay = new OTM()
-    for (const event of eventItems) {
-        const localStartDay = event.timeStart.toLocaleDateString()
-        eventsByDay.add(localStartDay, event)
+    let userNameToVRChatProfile = {}
+	eventHostLinks.subscribe(value => {
+		userNameToVRChatProfile = value;
+	});
+
+    const groupEventsByDay = () => {
+        const eventsByDay = new OTM()
+        for (const event of eventItems) {
+            const localStartDay = event.timeStart.toLocaleDateString()
+            eventsByDay.add(localStartDay, event)
+        }
+        return eventsByDay
     }
 
-    let eventDays = Array.from(eventsByDay.keys())
-    eventDays = eventDays.map((e) => new Date(e).valueOf())
-    eventDays.sort()
-    eventDays = eventDays.map((e) => new Date(e).toLocaleDateString())
+    const getUniqueDays = () => {
+        let eventDays = Array.from(eventsByDay.keys())
+        eventDays = eventDays.map((e) => new Date(e).valueOf())
+        eventDays.sort()
+        eventDays = eventDays.map((e) => new Date(e).toLocaleDateString())
+        return eventDays
+    }
 
-    let currentTime = getCurrentTime(30)
-    setInterval(
-        () => {
-            currentTime = getCurrentTime(30)
-        }, 26 * 1000
-    )
+    let eventItems = []
+    let eventsByDay = groupEventsByDay()
+    let eventDays = getUniqueDays()
+	eventData.subscribe(value => {
+		eventItems = value;
+        eventsByDay = groupEventsByDay()
+        eventDays = getUniqueDays()
+	});
 
     const getLocalTime = (date) => {
         let time = date.toLocaleTimeString()
@@ -39,10 +49,10 @@
         const eventStartTime = event.timeStart.valueOf()
         const eventEndTime = event.timeEnd.valueOf()
         const bufferToStart = (3 * 60 * 1000)
-        if (eventStartTime - bufferToStart < currentTime && currentTime < eventEndTime) {
+        if (eventStartTime - bufferToStart < $currentTime && $currentTime < eventEndTime) {
             // Event in progress
             return 'event-is-active'
-        } else if (eventStartTime < currentTime) {
+        } else if (eventStartTime < $currentTime) {
             // Event is over
             return 'event-is-complete'
         } else {
@@ -52,7 +62,7 @@
     }
 
     const getVRChatUserLink = (hostName) => {
-        return userNameToVRChatProfile.get(hostName)
+        return userNameToVRChatProfile[hostName]
     }
 </script>
 
@@ -69,7 +79,7 @@
     	{#each eventDays as eventDay}
     		<h4>{eventDay}</h4>
             {#each Array.from(eventsByDay.get(eventDay)) as event}
-                <div class="event-listing {currentTime ? getClassTypeForEvent(event) : ''}">
+                <div class="event-listing {$currentTime ? getClassTypeForEvent(event) : ''}">
                     <span class="event-time">
                         <div>{getLocalTime(event.timeStart)}</div>
                         {#if event.liveStreamHost}

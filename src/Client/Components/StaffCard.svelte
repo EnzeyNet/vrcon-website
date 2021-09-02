@@ -1,5 +1,10 @@
 <script>
-    import userData from '../data/staffDetails';
+    import { staffDetails } from '../dataStore.js'
+
+    let userData = []
+    staffDetails.subscribe(value => {
+        userData = value;
+    });
 </script>
 
 <div class="staff-list container">

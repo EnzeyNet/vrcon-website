@@ -1,10 +1,17 @@
 <script>
-    import eventItems from '../data/eventsData';
-    import { getCurrentTime } from './helpers.js'
+    import { eventData, eventHostLinks, currentTime } from '../dataStore.js'
 
-    const hostname = location.hostname
-    const hostedEvents = Array.from(eventItems).filter(event => !!event.liveStreamHost)
-    const getCurrentHostedStream = () => {
+    let userNameToVRChatProfile = new Map()
+    eventHostLinks.subscribe(value => {
+        userNameToVRChatProfile = new Map(value);
+    });
+
+    let hostedEvents = []
+    eventData.subscribe(value => {
+        hostedEvents = Array.from(value).filter(event => !!event.liveStreamHost);
+    });
+
+    const getCurrentHostedStream = (currentTime) => {
         let currentStreamHost = null
         for (const event of hostedEvents) {
             const eventStartTime = event.timeStart.valueOf()
@@ -14,18 +21,12 @@
             }
         }
     }
+    $: currentHostedEvent = getCurrentHostedStream($currentTime)
 
-    let currentTime = getCurrentTime(30)
-    let currentHostedEvent = getCurrentHostedStream()
-    setInterval(
-        () => {
-            currentTime = getCurrentTime(30)
-            currentHostedEvent = getCurrentHostedStream()
-        }, 26 * 1000
-    )
+    const hostname = window.location.hostname
 
     // Video: https://www.youtube.com/watch?v=CTYUyBxQ9SU
-    const refFrom = '' + window.location.protocol + '//' + window.location.hostname
+    const refFrom = '' + window.location.protocol + '//' + hostname
     const youtubeVideoId = 'wDp-3Zmg-OI'
     const youtubeIntroLink = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&origin=${refFrom}`
 
