@@ -17,7 +17,7 @@ const getCurrentTime = (precisionInSeconds) => {
     return time
 }
 
-export const eventData = writable([]);
+export const eventDetails = writable([]);
 export const staffDetails = writable([]);
 export const eventHostLinks = writable({});
 export const currentTime = writable(getCurrentTime(30))
@@ -30,7 +30,7 @@ setInterval(
 
 const parseDate = (str) => {
     const d = new Date(str)
-    if (isNaN(d.valueOf())) {
+    if (isNaN(d.valueOf()) || d.valueOf() !== d.getTime()) {
         console.error('failed to parse date: ${str}')
     }
     return d
@@ -45,7 +45,7 @@ const parseDate = (str) => {
                 eventData.timeStart = parseDate(eventData.timeStart)
                 eventData.timeEnd = parseDate(eventData.timeEnd)
             }
-            eventData.set(events)
+            eventDetails.set(events)
         } else {
             console.log('failed to load event data')
         }

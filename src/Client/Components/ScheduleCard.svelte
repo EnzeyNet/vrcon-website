@@ -4,12 +4,7 @@
         getLocaleDayDisplay,
         getLocaleTimeDisplay
     } from '../lib/formatter';
-    import { eventData, eventHostLinks, currentTime } from '../dataStore.js'
-
-    let userNameToVRChatProfile = {}
-	eventHostLinks.subscribe(value => {
-		userNameToVRChatProfile = value;
-	});
+    import { eventDetails, eventHostLinks, currentTime } from '../dataStore.js'
 
     const groupEventsByDay = () => {
         const eventsByDay = new OTM()
@@ -31,7 +26,7 @@
     let eventItems = []
     let eventsByDay = groupEventsByDay()
     let eventDays = getUniqueDays()
-	eventData.subscribe(value => {
+	eventDetails.subscribe(value => {
 		eventItems = value;
         eventsByDay = groupEventsByDay()
         eventDays = getUniqueDays()
@@ -60,9 +55,6 @@
         }
     }
 
-    const getVRChatUserLink = (hostName) => {
-        return userNameToVRChatProfile[hostName]
-    }
 </script>
 
 <div class="container">
@@ -102,7 +94,7 @@
                                 <div class="event-host-details">Sign up <a href={event.signUp}>here</a> to join the event</div>
                             {/if}
                             {#if event.joinOn}
-                                <div class="event-host-details">Join on <a href={getVRChatUserLink(event.joinOn)}>{event.joinOn}</a></div>
+                                <div class="event-host-details">Join on <a href={$eventHostLinks[event.joinOn]}>{event.joinOn}</a></div>
                             {/if}
                             {#if event.isQuestCompatible}
                                 <div class="event-quest-compatible">Quest Supported</div>

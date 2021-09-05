@@ -1,5 +1,5 @@
 <script>
-    import { eventData, eventHostLinks, currentTime } from '../dataStore.js'
+    import { eventDetails, eventHostLinks, currentTime } from '../dataStore.js'
 
     let userNameToVRChatProfile = new Map()
     eventHostLinks.subscribe(value => {
@@ -7,7 +7,7 @@
     });
 
     let hostedEvents = []
-    eventData.subscribe(value => {
+    eventDetails.subscribe(value => {
         hostedEvents = Array.from(value).filter(event => !!event.liveStreamHost);
     });
 
