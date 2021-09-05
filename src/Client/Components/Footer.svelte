@@ -14,7 +14,7 @@ import {
     <div class="footer-section">
         <h3>Socials</h3>
         <div class="footer-list">
-            <a class="socials-link" href="https://discord.gg/HHCDCVEd">
+            <a class="socials-link" href="https://discord.gg/DDEG4gv">
                 <Icon data={faDiscord} scale="2"/>
                 <div class="link-name">Discord</div>
             </a>
