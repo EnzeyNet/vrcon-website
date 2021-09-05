@@ -1,23 +1,23 @@
 [
     {
-        "timeStart": "2021-09-09T17:00:00-04:00",
-        "timeEnd":   "2021-09-09T18:00:00-04:00",
+        "timeStart": "2021-09-09T17:00-04:00",
+        "timeEnd":   "2021-09-09T18:00-04:00",
         "name": "Opening Ceremony",
         "liveStreamHost": "VRConlive",
         "hostedBy": "VRCon",
         "description": "Join the VRCon team and celebrate with us as we open the doors to VRCon 2021! You can watch this event twitch via twitch.com/VRConlive"
     },
     {
-        "timeStart": "2021-09-09T18:00:00-04:00",
-        "timeEnd":   "2021-09-09T19:00:00-04:00",
+        "timeStart": "2021-09-09T18:00-04:00",
+        "timeEnd":   "2021-09-09T19:00-04:00",
         "name": "Guided Tour",
         "liveStreamHost": "VRConlive",
         "hostedBy": "VRCon",
         "description": "Streamed tour of VRCon by members of the staff team. You can watch this event twitch via twitch.com/VRConlive"
     },
     {
-        "timeStart": "2021-09-09T19:00:00-04:00",
-        "timeEnd":   "2021-09-09T21:00:00-04:00",
+        "timeStart": "2021-09-09T19:00-04:00",
+        "timeEnd":   "2021-09-09T21:00-04:00",
         "name": "Muse Concert Series with Special Guests",
         "joinOn": "VRCon2",
         "liveStreamHost": "tfmjonny",
@@ -25,8 +25,8 @@
         "description": "Spectate the Muse concert with live performances and special guests!"
     },
     {
-        "timeStart": "2021-09-09T21:00:00-04:00",
-        "timeEnd":   "2021-09-09T22:00:00-04:00",
+        "timeStart": "2021-09-09T21:00-04:00",
+        "timeEnd":   "2021-09-09T22:00-04:00",
         "name": "Science outreach in VR",
         "joinOn": "VRCon3",
         "liveStreamHost": "VRConlive",
@@ -35,8 +35,8 @@
         "description": "Join AstroRabbit's talk about their experiences in teaching STEM topics in VRChat."
     },
     {
-        "timeStart": "2021-09-09T22:00:00-04:00",
-        "timeEnd":   "2021-09-09T23:00:00-04:00",
+        "timeStart": "2021-09-09T22:00-04:00",
+        "timeEnd":   "2021-09-09T23:00-04:00",
         "name": "How to Combined ALL your VRC Worlds into ONE",
         "joinOn": "VRCon1",
         "liveStreamHost": "VRConlive",
@@ -45,8 +45,8 @@
         "description": "A talk about world optimization by Air In."
     },
     {
-        "timeStart": "2021-09-10T03:00:00-04:00",
-        "timeEnd":   "2021-09-10T04:00:00-04:00",
+        "timeStart": "2021-09-10T03:00-04:00",
+        "timeEnd":   "2021-09-10T04:00-04:00",
         "name": "Casual Hangout",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
@@ -54,8 +54,8 @@
         "description": "A chill hangout in the VRCon world."
     },
     {
-        "timeStart": "2021-09-10T04:00:00-04:00",
-        "timeEnd":   "2021-09-10T05:00:00-04:00",
+        "timeStart": "2021-09-10T04:00-04:00",
+        "timeEnd":   "2021-09-10T05:00-04:00",
         "name": "Hook Junkers",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
@@ -63,32 +63,32 @@
         "description": "A grapple hook adventure through an alien landscape, a world by Blueasis and Phasedragon."
     },
     {
-        "timeStart": "2021-09-10T05:00:00-04:00",
-        "timeEnd":   "2021-09-10T06:00:00-04:00",
+        "timeStart": "2021-09-10T05:00-04:00",
+        "timeEnd":   "2021-09-10T06:00-04:00",
         "name": "Worldhop",
         "joinOn": "VRCon3",
         "hostedBy": "VRCon",
         "description": "Join us in a multi-instance World Hop of our favorite worlds of this year!"
     },
     {
-        "timeStart": "2021-09-10T06:00:00-04:00",
-        "timeEnd":   "2021-09-10T07:00:00-04:00",
+        "timeStart": "2021-09-10T06:00-04:00",
+        "timeEnd":   "2021-09-10T07:00-04:00",
         "name": "Putt Putt Pond",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
         "description": "36 Holes of classic putt putt fun!"
     },
     {
-        "timeStart": "2021-09-10T07:00:00-04:00",
-        "timeEnd":   "2021-09-10T08:00:00-04:00",
+        "timeStart": "2021-09-10T07:00-04:00",
+        "timeEnd":   "2021-09-10T08:00-04:00",
         "name": "Climbing",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
         "description": "How about starting your morning off with some light exercise!"
     },
     {
-        "timeStart": "2021-09-10T08:00:00-04:00",
-        "timeEnd":   "2021-09-10T09:00:00-04:00",
+        "timeStart": "2021-09-10T08:00-04:00",
+        "timeEnd":   "2021-09-10T09:00-04:00",
         "name": "Casual Pool",
         "joinOn": "VRCon3",
         "hostedBy": "VRCon",
@@ -96,8 +96,8 @@
         "description": "Enjoy an informal pool session and meet some new people!"
     },
     {
-        "timeStart": "2021-09-10T09:00:00-04:00",
-        "timeEnd":   "2021-09-10T10:00:00-04:00",
+        "timeStart": "2021-09-10T09:00-04:00",
+        "timeEnd":   "2021-09-10T10:00-04:00",
         "name": "Waifuwehr-Tour",
         "joinOn": "VRCon1",
         "hostedBy": "Waifuwehr Community",
@@ -105,8 +105,8 @@
         "description": "A guided tour of our worlds and a meet and greet with various members and our staff."
     },
     {
-        "timeStart": "2021-09-10T10:00:00-04:00",
-        "timeEnd":   "2021-09-10T11:00:00-04:00",
+        "timeStart": "2021-09-10T10:00-04:00",
+        "timeEnd":   "2021-09-10T11:00-04:00",
         "name": "No Friends Friends Club",
         "joinOn": "VRCon2",
         "hostedBy": "Kuro",
@@ -115,8 +115,8 @@
         "description": "VRChat's very own anti-social social club! We'll talk about who we are, what we do, some of our experiences and everything else you need to know about us and our group."
     },
     {
-        "timeStart": "2021-09-10T11:00:00-04:00",
-        "timeEnd":   "2021-09-10T13:00:00-04:00",
+        "timeStart": "2021-09-10T11:00-04:00",
+        "timeEnd":   "2021-09-10T13:00-04:00",
         "name": "Tygre, The Singing Furry",
         "joinOn": "VRCon3",
         "hostedBy": "Tygre",
@@ -125,8 +125,8 @@
         "description": "Join the adorable stripey kitty with a song in their heart for a performance to get you on your feet and your tushies shakin"
     },
     {
-        "timeStart": "2021-09-10T13:00:00-04:00",
-        "timeEnd":   "2021-09-10T15:00:00-04:00",
+        "timeStart": "2021-09-10T13:00-04:00",
+        "timeEnd":   "2021-09-10T15:00-04:00",
         "name": "Two Events in one! New Player Meetup / Mini Intro To VRChat",
         "joinOn": "VRCon1",
         "hostedBy": "PeaParty",
@@ -134,8 +134,8 @@
         "description": "Introducing new players to VRChat, what to expect and what it has to offer. Showing quest compatible/optimized maps to the new players."
     },
     {
-        "timeStart": "2021-09-10T14:00:00-04:00",
-        "timeEnd":   "2021-09-10T16:00:00-04:00",
+        "timeStart": "2021-09-10T14:00-04:00",
+        "timeEnd":   "2021-09-10T16:00-04:00",
         "name": "Pool Tournament",
         "liveStreamHost": "VRConlive",
         "hostedBy": "SoldnerX",
@@ -144,8 +144,8 @@
         "description": "Attendees will participate in a 2v2 Lightning Round 8-ball pool tournament which will be capped at 64 players."
     },
     {
-        "timeStart": "2021-09-10T16:00:00-04:00",
-        "timeEnd":   "2021-09-10T19:00:00-04:00",
+        "timeStart": "2021-09-10T16:00-04:00",
+        "timeEnd":   "2021-09-10T19:00-04:00",
         "name": "Dance Cypher",
         "joinOn": "VRCon1",
         "hostedBy": "GGDuh",
@@ -153,8 +153,8 @@
         "description": "A dance event where everyone gathers around a DJ joining in and getting a chance to groove, enjoy music and demonstrate their musicality and technicality."
     },
     {
-        "timeStart": "2021-09-10T19:00:00-04:00",
-        "timeEnd":   "2021-09-10T20:00:00-04:00",
+        "timeStart": "2021-09-10T19:00-04:00",
+        "timeEnd":   "2021-09-10T20:00-04:00",
         "name": "LGBT+ in VRC",
         "joinOn": "VRCon2",
         "hostedBy": "Nerdynanny",
@@ -163,8 +163,8 @@
         "description": "A discussion and roundtable with guests on how online spaces allow for the exploration and affirmation of different sexual, romantic, and gender identities."
     },
     {
-        "timeStart": "2021-09-10T20:00:00-04:00",
-        "timeEnd":   "2021-09-10T21:00:00-04:00",
+        "timeStart": "2021-09-10T20:00-04:00",
+        "timeEnd":   "2021-09-10T21:00-04:00",
         "name": "Trivia Temple",
         "joinOn": "ImprovMod",
         "hostedBy": "VRChat Events",
@@ -172,8 +172,8 @@
         "description": "You have been summoned to the Trivia Temple! The only way to escape is to appease the temple gods by answering our trivia questions correctly!"
     },
     {
-        "timeStart": "2021-09-10T21:00:00-04:00",
-        "timeEnd":   "2021-09-10T23:00:00-04:00",
+        "timeStart": "2021-09-10T21:00-04:00",
+        "timeEnd":   "2021-09-10T23:00-04:00",
         "name": "VRChat Roleplay: How, What, When, Where",
         "joinOn": "VRCon3",
         "hostedBy": "Jowbowl, Sugarcoated Witch, and Satchi",
@@ -182,8 +182,8 @@
         "description": "A general 'How to roleplay' mixed with interviews from the heads of the most prominent open VRCRoleplay groups such as Purple Lotus, Misty Shores, and Dream Tree. Followed by an improv show with plenty of audience participation!"
     },
     {
-        "timeStart": "2021-09-11T03:00:00-04:00",
-        "timeEnd":   "2021-09-11T04:00:00-04:00",
+        "timeStart": "2021-09-11T03:00-04:00",
+        "timeEnd":   "2021-09-11T04:00-04:00",
         "name": "Murder Game",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
@@ -191,8 +191,8 @@
         "description": "Murder is a classic social deduction game. One man has an intent to murder everyone! It is up to you to survive and take down the murderer before he takes you down."
     },
     {
-        "timeStart": "2021-09-11T04:00:00-04:00",
-        "timeEnd":   "2021-09-11T05:00:00-04:00",
+        "timeStart": "2021-09-11T04:00-04:00",
+        "timeEnd":   "2021-09-11T05:00-04:00",
         "name": "Quest World Hop",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
@@ -200,8 +200,8 @@
         "description": "Join us as we explore quest compatible worlds!"
     },
     {
-        "timeStart": "2021-09-11T05:00:00-04:00",
-        "timeEnd":   "2021-09-11T06:00:00-04:00",
+        "timeStart": "2021-09-11T05:00-04:00",
+        "timeEnd":   "2021-09-11T06:00-04:00",
         "name": "Citrus0range's Warhammer Avatar PVP Showcase/Battle",
         "joinOn": "VRCon3",
         "hostedBy": "Citrus0range",
@@ -209,8 +209,8 @@
         "description": "This event will let you learn and experience the PVP side of VRChat with an intricate melee and ranged combat system."
     },
     {
-        "timeStart": "2021-09-11T06:00:00-04:00",
-        "timeEnd":   "2021-09-11T07:00:00-04:00",
+        "timeStart": "2021-09-11T06:00-04:00",
+        "timeEnd":   "2021-09-11T07:00-04:00",
         "name": "SCP Foundation of VRC site tour",
         "joinOn": "VRCon1",
         "hostedBy": "SCP Community",
@@ -218,8 +218,8 @@
         "description": "Secure. Contain Protect. Learn about this secretive organization that studies the paranormal and protects the metaverse from it!"
     },
     {
-        "timeStart": "2021-09-11T07:00:00-04:00",
-        "timeEnd":   "2021-09-11T08:00:00-04:00",
+        "timeStart": "2021-09-11T07:00-04:00",
+        "timeEnd":   "2021-09-11T08:00-04:00",
         "name": "LPD Behind the Scenes",
         "joinOn": "VRCon2",
         "hostedBy": "LPD Community",
@@ -227,8 +227,8 @@
         "description": "Freeze! The Loli Police department is on the scene! Learn how VRChat's largest roleplay police department works and get an inside peek into the day-to-day operations and roleplay opportunities."
     },
     {
-        "timeStart": "2021-09-11T08:00:00-04:00",
-        "timeEnd":   "2021-09-11T09:00:00-04:00",
+        "timeStart": "2021-09-11T08:00-04:00",
+        "timeEnd":   "2021-09-11T09:00-04:00",
         "name": "Storytime with Magnanix",
         "joinOn": "VRCon3",
         "hostedBy": "Magnanix",
@@ -237,8 +237,8 @@
         "description": "Come and relax while listening to stories performed by Magnanix."
     },
     {
-        "timeStart": "2021-09-11T09:00:00-04:00",
-        "timeEnd":   "2021-09-11T10:00:00-04:00",
+        "timeStart": "2021-09-11T09:00-04:00",
+        "timeEnd":   "2021-09-11T10:00-04:00",
         "name": "Two events in one! Find your Voice: voice training workshop",
         "joinOn": "VRCon1",
         "hostedBy": "VirtuaLilly",
@@ -247,8 +247,8 @@
         "description": "Support and lessons for voice training, both for more feminine and masculine tones. Get a full rundown on how the vocal systems work, the areas of interest, and how to start lessons and training for people's preferred voice tone and range. Learn specifics of vocal ranges, techniques to achieve certain tones and styles, and exercises attendees can take with them to continue in their own time."
     },
     {
-        "timeStart": "2021-09-11T10:00:00-04:00",
-        "timeEnd":   "2021-09-11T11:00:00-04:00",
+        "timeStart": "2021-09-11T10:00-04:00",
+        "timeEnd":   "2021-09-11T11:00-04:00",
         "name": "Two events in one! Finding Your Voice in VR",
         "joinOn": "VRCon1",
         "hostedBy": "Frosted Fricks & Fizzi/Furtrap",
@@ -257,8 +257,8 @@
         "description": "A small workshop featuring vocal warm-ups as well as critiques for individuals' voices in VRChat and tips for what they can do to improve their desired sound."
     },
     {
-        "timeStart": "2021-09-11T11:00:00-04:00",
-        "timeEnd":   "2021-09-11T12:00:00-04:00",
+        "timeStart": "2021-09-11T11:00-04:00",
+        "timeEnd":   "2021-09-11T12:00-04:00",
         "name": "Deaf Culture Panel",
         "joinOn": "VRCon3",
         "hostedBy": "Fearlesskoolaid",
@@ -267,8 +267,8 @@
         "description": "Learn the Dos and Don'ts of Deaf culture with Fearlesskoolaid!"
     },
     {
-        "timeStart": "2021-09-11T12:00:00-04:00",
-        "timeEnd":   "2021-09-11T13:00:00-04:00",
+        "timeStart": "2021-09-11T12:00-04:00",
+        "timeEnd":   "2021-09-11T13:00-04:00",
         "name": "Saturday Squats",
         "joinOn": "SquatBot",
         "hostedBy": "Doublegoose & 1029Chris",
@@ -277,8 +277,8 @@
         "description": "Stay healthy as we squat the Saturday away together. Don't forget to bring water!"
     },
     {
-        "timeStart": "2021-09-11T13:00:00-04:00",
-        "timeEnd":   "2021-09-11T14:00:00-04:00",
+        "timeStart": "2021-09-11T13:00-04:00",
+        "timeEnd":   "2021-09-11T14:00-04:00",
         "name": "IM_NAKU LIVE",
         "joinOn": "VRCon2",
         "hostedBy": "Naku",
@@ -287,8 +287,8 @@
         "description": "Performance set list including piano, live vocals, backing tracks, etc."
     },
     {
-        "timeStart": "2021-09-11T14:00:00-04:00",
-        "timeEnd":   "2021-09-11T14:30:00-04:00",
+        "timeStart": "2021-09-11T14:00-04:00",
+        "timeEnd":   "2021-09-11T14:30-04:00",
         "name": "AdzySlayer Live Performance!",
         "joinOn": "VRCon3",
         "hostedBy": "AdzySlayer",
@@ -297,8 +297,8 @@
         "description": "Enjoy AdzySlayer's 30-minute set of pure guitar shredding!"
     },
     {
-        "timeStart": "2021-09-11T14:30:00-04:00",
-        "timeEnd":   "2021-09-11T15:00:00-04:00",
+        "timeStart": "2021-09-11T14:30-04:00",
+        "timeEnd":   "2021-09-11T15:00-04:00",
         "name": "March with the Kitten Marching Band",
         "joinOn": "VRCon1",
         "hostedBy": "Kitten Marching Band Community",
@@ -306,8 +306,8 @@
         "description": "Fill the VRChat worlds with warm joy as a member of a Kitten Marching Band! Cat ears included."
     },
     {
-        "timeStart": "2021-09-11T15:00:00-04:00",
-        "timeEnd":   "2021-09-11T18:30:00-04:00",
+        "timeStart": "2021-09-11T15:00-04:00",
+        "timeEnd":   "2021-09-11T18:30-04:00",
         "name": "Laserdome",
         "liveStreamHost": "xcirrex",
         "hostedBy": "Laserdome Community",
@@ -315,16 +315,16 @@
         "description": "You'll get to see teams from all types of VRChat communities and players from around the world compete against each other in the most intense game of VR Laser Tag!"
     },
     {
-        "timeStart": "2021-09-11T16:00:00-04:00",
-        "timeEnd":   "2021-09-11T18:00:00-04:00",
+        "timeStart": "2021-09-11T16:00-04:00",
+        "timeEnd":   "2021-09-11T18:00-04:00",
         "name": "Open RP for New comers",
         "joinOn": "VRCon1",
         "hostedBy": "Purple Lotus Community",
         "description": "Purple Lotus presents an open RolePlay opportunity for all. Audience members are invited to experience an in-character night at our Casino with our experienced staff and enjoy unexpected and fully interactive RP events throughout the session!"
     },
     {
-        "timeStart": "2021-09-11T18:00:00-04:00",
-        "timeEnd":   "2021-09-11T19:00:00-04:00",
+        "timeStart": "2021-09-11T18:00-04:00",
+        "timeEnd":   "2021-09-11T19:00-04:00",
         "name": "GIE Improv Workshop",
         "joinOn": "ImprovMod",
         "liveStreamHost": "gobloxvr",
@@ -332,8 +332,8 @@
         "description": "GIE's improv workshops are meant for beginners all the way up to pros! Here we teach improv fundamentals and provide a place for everyone to practice their skills!"
     },
     {
-        "timeStart": "2021-09-11T19:00:00-04:00",
-        "timeEnd":   "2021-09-11T21:00:00-04:00",
+        "timeStart": "2021-09-11T19:00-04:00",
+        "timeEnd":   "2021-09-11T21:00-04:00",
         "name": "Talent Show",
         "liveStreamHost": "VRConlive",
         "hostedBy": "SoldnerX Kuro",
@@ -342,16 +342,16 @@
         "description": "Show off  your crazy, impressive, or wacky Talents and avatars!"
     },
     {
-        "timeStart": "2021-09-11T21:00:00-04:00",
-        "timeEnd":   "2021-09-11T21:30:00-04:00",
+        "timeStart": "2021-09-11T21:00-04:00",
+        "timeEnd":   "2021-09-11T21:30-04:00",
         "name": "What's in the box?",
         "hostedBy": "Naticus",
         "signUp": "https://docs.google.com/forms/d/e/1FAIpQLSf5TWjDpvZ44v7gPaWASlmUNNrdph9Te6wsXJJOGo2mIge8gw/viewform",
         "description": "It's a VRChat Events team-based trivia competition. Teams consist of 8-10 people."
     },
     {
-        "timeStart": "2021-09-11T21:30:00-04:00",
-        "timeEnd":   "2021-09-11T22:00:00-04:00",
+        "timeStart": "2021-09-11T21:30-04:00",
+        "timeEnd":   "2021-09-11T22:00-04:00",
         "name": "VR Pole Dancing - Next level of fitness",
         "joinOn": "VRCon3",
         "hostedBy": "Archantos",
@@ -360,16 +360,16 @@
         "description": "A routine involving deep warmup and stretching, followed by mixed strength and technique pole dance training."
     },
     {
-        "timeStart": "2021-09-11T22:00:00-04:00",
-        "timeEnd":   "2021-09-11T23:00:00-04:00",
+        "timeStart": "2021-09-11T22:00-04:00",
+        "timeEnd":   "2021-09-11T23:00-04:00",
         "name": "VRTravellers Presents: The Pilot",
         "joinOn": "VRCon2",
         "hostedBy": "VRTravellers",
         "description": "An interactive and immersive story-based tour."
     },
     {
-        "timeStart": "2021-09-12T03:00:00-04:00",
-        "timeEnd":   "2021-09-12T04:00:00-04:00",
+        "timeStart": "2021-09-12T03:00-04:00",
+        "timeEnd":   "2021-09-12T04:00-04:00",
         "name": "Would you rather",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
@@ -377,8 +377,8 @@
         "description": "Join us for a quick 'would you rather' mini game or face the consequence of missing out!"
     },
     {
-        "timeStart": "2021-09-12T04:00:00-04:00",
-        "timeEnd":   "2021-09-12T05:00:00-04:00",
+        "timeStart": "2021-09-12T04:00-04:00",
+        "timeEnd":   "2021-09-12T05:00-04:00",
         "name": "Freeze Tag",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
@@ -386,16 +386,16 @@
         "description": "Run as fast as you can, don't let yourself get tagged!"
     },
     {
-        "timeStart": "2021-09-12T05:00:00-04:00",
-        "timeEnd":   "2021-09-12T06:00:00-04:00",
+        "timeStart": "2021-09-12T05:00-04:00",
+        "timeEnd":   "2021-09-12T06:00-04:00",
         "name": "Werewolf",
         "joinOn": "VRCon3",
         "hostedBy": "VRCon",
         "description": "Some within your village are not what they seem to be. Can you work together with the other villagers to discover the werewolves before it's too late?"
     },
     {
-        "timeStart": "2021-09-12T06:00:00-04:00",
-        "timeEnd":   "2021-09-12T07:00:00-04:00",
+        "timeStart": "2021-09-12T06:00-04:00",
+        "timeEnd":   "2021-09-12T07:00-04:00",
         "name": "Quest Mini Golf",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
@@ -403,8 +403,8 @@
         "description": "A casual round of putt-putt, join us as we play through 18 holes."
     },
     {
-        "timeStart": "2021-09-12T07:00:00-04:00",
-        "timeEnd":   "2021-09-12T08:00:00-04:00",
+        "timeStart": "2021-09-12T07:00-04:00",
+        "timeEnd":   "2021-09-12T08:00-04:00",
         "name": "Treasure Hunt",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
@@ -412,8 +412,8 @@
         "description": "A search for buried pirate treasure! A world made by jar."
     },
     {
-        "timeStart": "2021-09-12T08:00:00-04:00",
-        "timeEnd":   "2021-09-12T09:00:00-04:00",
+        "timeStart": "2021-09-12T08:00-04:00",
+        "timeEnd":   "2021-09-12T09:00-04:00",
         "name": "VR dance showcase by the SXSW2021 champion YOIKAMI",
         "joinOn": "VRCon3",
         "hostedBy": "Yoikami",
@@ -421,8 +421,8 @@
         "description": "A dance performance by Yoikami."
     },
     {
-        "timeStart": "2021-09-12T09:00:00-04:00",
-        "timeEnd":   "2021-09-12T10:00:00-04:00",
+        "timeStart": "2021-09-12T09:00-04:00",
+        "timeEnd":   "2021-09-12T10:00-04:00",
         "name": "Community Spotlight: Kitten Marching Band",
         "joinOn": "VRCon1",
         "hostedBy": "Kitten Marching Band Community",
@@ -431,16 +431,16 @@
         "description": "You heard about them, and you love them, now learn about them! Meet the kitten marching band community and learn more about their daily activities."
     },
     {
-        "timeStart": "2021-09-12T10:00:00-04:00",
-        "timeEnd":   "2021-09-12T11:00:00-04:00",
+        "timeStart": "2021-09-12T10:00-04:00",
+        "timeEnd":   "2021-09-12T11:00-04:00",
         "name": "Explore VRChat World Hop",
         "joinOn": "VRCon2",
         "hostedBy": "Rickity",
         "description": "Discover VRChat worlds as we explore new places as a group!"
     },
     {
-        "timeStart": "2021-09-12T11:00:00-04:00",
-        "timeEnd":   "2021-09-12T13:00:00-04:00",
+        "timeStart": "2021-09-12T11:00-04:00",
+        "timeEnd":   "2021-09-12T13:00-04:00",
         "name": "VRCon Film Festival",
         "joinOn": "VRCon3",
         "hostedBy": "VRCon",
@@ -449,8 +449,8 @@
         "description": "Grab your popcorn and settle in as we watch submissions to the VRCon Film Festival!"
     },
     {
-        "timeStart": "2021-09-12T13:00:00-04:00",
-        "timeEnd":   "2021-09-12T14:00:00-04:00",
+        "timeStart": "2021-09-12T13:00-04:00",
+        "timeEnd":   "2021-09-12T14:00-04:00",
         "name": "Introduction to VR Sign Language",
         "joinOn": "VRCon1",
         "hostedBy": "Fearlesskoolaid",
@@ -459,8 +459,8 @@
         "description": "We will hold a class with different teachers to show bits and pieces of their language."
     },
     {
-        "timeStart": "2021-09-12T14:00:00-04:00",
-        "timeEnd":   "2021-09-12T15:00:00-04:00",
+        "timeStart": "2021-09-12T14:00-04:00",
+        "timeEnd":   "2021-09-12T15:00-04:00",
         "name": "The Amazing Spider-Lair Experience",
         "joinOn": "VRCon3",
         "hostedBy": "The Spider-Lair Community",
@@ -468,8 +468,8 @@
         "description": "Join The Spider-Lair and discover the action-packed wall-crawling, web-swinging hangout world!"
     },
     {
-        "timeStart": "2021-09-12T15:00:00-04:00",
-        "timeEnd":   "2021-09-12T16:00:00-04:00",
+        "timeStart": "2021-09-12T15:00-04:00",
+        "timeEnd":   "2021-09-12T16:00-04:00",
         "name": "VRCLens Filmmaking & Photography Workshop",
         "joinOn": "VRCon1",
         "hostedBy": "Joe Hunting (Little Poe)",
@@ -477,8 +477,8 @@
         "description": "A hands-on class introducing the basics and advanced techniques for operating virtual camera 'VRCLens' created by Hirabiki. This workshop is perfect for photography & film enthusiasts interested in getting the best out of their camera. VRCLens avatar will be provided at the event."
     },
     {
-        "timeStart": "2021-09-12T16:00:00-04:00",
-        "timeEnd":   "2021-09-12T17:00:00-04:00",
+        "timeStart": "2021-09-12T16:00-04:00",
+        "timeEnd":   "2021-09-12T17:00-04:00",
         "name": "Meme showcase 2",
         "joinOn": "VRCon2",
         "hostedBy": "CyberChimp",
@@ -487,8 +487,8 @@
         "description": "CyberChimp showcase some of his greatest performance avatars. You're sure to catch some laughs here!"
     },
     {
-        "timeStart": "2021-09-12T17:00:00-04:00",
-        "timeEnd":   "2021-09-12T18:00:00-04:00",
+        "timeStart": "2021-09-12T17:00-04:00",
+        "timeEnd":   "2021-09-12T18:00-04:00",
         "name": "MrCreepyPasta’s Storytime",
         "joinOn": "VRCon3",
         "hostedBy": "MrCreepyPasta",
@@ -497,8 +497,8 @@
         "description": "Gather round the campfire boils and ghouls and MrCreepyPasta will tell you stories that will give you nightmares for years to come. Taken from stories around the internet and some of your favorites from YouTube, listen as the one and only blue man retells them in the iconic voice you've come to know and love."
     },
     {
-        "timeStart": "2021-09-12T18:00:00-04:00",
-        "timeEnd":   "2021-09-12T19:00:00-04:00",
+        "timeStart": "2021-09-12T18:00-04:00",
+        "timeEnd":   "2021-09-12T19:00-04:00",
         "name": "VRChat Movie Panel",
         "joinOn": "VRCon1",
         "hostedBy": "The VRChat Movie Team",
@@ -507,8 +507,8 @@
         "description": "Q & A For the VRChat Movie."
     },
     {
-        "timeStart": "2021-09-12T19:00:00-04:00",
-        "timeEnd":   "2021-09-12T20:00:00-04:00",
+        "timeStart": "2021-09-12T19:00-04:00",
+        "timeEnd":   "2021-09-12T20:00-04:00",
         "name": "BONEWORKS dev talk on Future of VR",
         "joinOn": "VRCon2",
         "hostedBy": "AK0 from StressLevelZero",
@@ -517,8 +517,8 @@
         "description": "A speculative roadmap from VR now to living entirely virtual. Tech timeline, Social change, & Economic impact."
     },
     {
-        "timeStart": "2021-09-12T20:00:00-04:00",
-        "timeEnd":   "2021-09-12T21:00:00-04:00",
+        "timeStart": "2021-09-12T20:00-04:00",
+        "timeEnd":   "2021-09-12T21:00-04:00",
         "name": "Belly Dance Lesson",
         "joinOn": "VRCon3",
         "hostedBy": "DustBunny",
@@ -527,8 +527,8 @@
         "description": "Introductory lesson on how to belly dance in VR."
     },
     {
-        "timeStart": "2021-09-12T21:00:00-04:00",
-        "timeEnd":   "2021-09-12T22:00:00-04:00",
+        "timeStart": "2021-09-12T21:00-04:00",
+        "timeEnd":   "2021-09-12T22:00-04:00",
         "name": "GIE Improv Show",
         "joinOn": "ImprovMod",
         "hostedBy": "goblox",
@@ -536,8 +536,8 @@
         "description": "GIE's top workshop attendees put on an improv show with improvised music and games."
     },
     {
-        "timeStart": "2021-09-12T22:00:00-04:00",
-        "timeEnd":   "2021-09-12T23:00:00-04:00",
+        "timeStart": "2021-09-12T22:00-04:00",
+        "timeEnd":   "2021-09-12T23:00-04:00",
         "name": "Closing Ceremony",
         "hostedBy": "VRCon",
         "liveStreamHost": "VRConlive",
