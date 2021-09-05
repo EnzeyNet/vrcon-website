@@ -19,7 +19,7 @@ const getLocaleDayDisplay = (date) => {
             console.error(`failed to format date: ${date}`)
         }
     } else {
-        console.log('date is not valid')
+        console.log(`failed to parse date: ${date}`)
     }
     return localeDateDisplay
 }
@@ -33,7 +33,7 @@ const getLocaleTimeDisplay = (date) => {
             console.error(`failed to format date: ${date}`)
         }
     } else {
-        console.log('date is not valid')
+        console.log(`failed to parse date: ${date}`)
     }
     return localeTimeDisplay
 }

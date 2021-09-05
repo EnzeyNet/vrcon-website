@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store';
+import parseISO from 'date-fns/parseISO'
 
 const getCurrentTime = (precisionInSeconds) => {
     if (isNaN(precisionInSeconds) || precisionInSeconds < 0) {
@@ -29,9 +30,10 @@ setInterval(
 )
 
 const parseDate = (str) => {
-    const d = new Date(str)
+    const d = parseISO(str)
+    console.log(`${str} parsed to ${d.toTimeString()}`)
     if (isNaN(d.valueOf()) || d.valueOf() !== d.getTime()) {
-        console.error('failed to parse date: ${str}')
+        console.error(`failed to parse date: ${str}`)
     }
     return d
 };

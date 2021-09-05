@@ -15,21 +15,25 @@
         return eventsByDay
     }
 
-    const getUniqueDays = () => {
+    const getUniqueDays = (eventsByDay) => {
         let eventDays = Array.from(eventsByDay.keys())
-        eventDays = eventDays.map((e) => new Date(e).valueOf())
+        const getFirstDate = (localDate) => {
+            const firstDateInGroup = eventsByDay.keys().next().value
+            return firstDateInGroup
+        }
+        eventDays = eventDays.map((localDate) => getFirstDate(localDate).valueOf())
         eventDays.sort()
-        eventDays = eventDays.map((e) => getLocaleDayDisplay(new Date(e)))
+        eventDays = eventDays.map((localDate) => getLocaleDayDisplay(new Date(localDate)))
         return eventDays
     }
 
     let eventItems = []
     let eventsByDay = groupEventsByDay()
-    let eventDays = getUniqueDays()
+    let eventDays = getUniqueDays(eventsByDay)
 	eventDetails.subscribe(value => {
 		eventItems = value;
         eventsByDay = groupEventsByDay()
-        eventDays = getUniqueDays()
+        eventDays = getUniqueDays(eventsByDay)
 	});
 
     const getLocalTime = (date) => {
