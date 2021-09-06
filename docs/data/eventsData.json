@@ -28,7 +28,7 @@
         "timeStart": "2021-09-09T21:00-04:00",
         "timeEnd":   "2021-09-09T22:00-04:00",
         "name": "Science outreach in VR",
-        "joinOn": "VRCon3",
+        "joinOn": "VRCon1",
         "liveStreamHost": "VRConlive",
         "hostedBy": "AstroRabbit",
         "isQuestCompatible": true,
@@ -38,7 +38,7 @@
         "timeStart": "2021-09-09T22:00-04:00",
         "timeEnd":   "2021-09-09T23:00-04:00",
         "name": "How to Combined ALL your VRC Worlds into ONE",
-        "joinOn": "VRCon1",
+        "joinOn": "VRCon2",
         "liveStreamHost": "VRConlive",
         "hostedBy": "Air In",
         "isQuestCompatible": true,
@@ -57,7 +57,6 @@
         "name": "Prop Hunt",
         "joinOn": "VRCon2",
         "hostedBy": "VRCon",
-        "isQuestCompatible": true,
         "description": "Hide and seek except the hiders can turn into inanimate objects and the seekers have guns․"
     },
     {
