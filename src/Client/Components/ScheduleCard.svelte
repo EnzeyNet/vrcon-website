@@ -6,34 +6,35 @@
     } from '../lib/formatter';
     import { eventDetails, eventHostLinks, currentTime } from '../dataStore.js'
 
+    const millisecondsOfDay = 1000 * 60 * 60 * 24
+    const timezoneOffset = new Date().getTimezoneOffset() * (1000 * 60)
+    const stripToBeginingOfDay = (date) => {
+        let time = date.valueOf()
+        time -= timezoneOffset
+        time -= time % millisecondsOfDay
+        time += timezoneOffset
+        console.log(new Date(time).toISOString())
+        return time
+    }
     const groupEventsByDay = () => {
         const eventsByDay = new OTM()
         for (const event of eventItems) {
-            const localStartDay = getLocaleDayDisplay(event.timeStart)
+            const localStartDay = stripToBeginingOfDay(event.timeStart)
             eventsByDay.add(localStartDay, event)
         }
         return eventsByDay
     }
 
-    const getUniqueDays = (eventsByDay) => {
-        let eventDays = Array.from(eventsByDay.keys())
-        const getFirstDate = (localDate) => {
-            const firstDateInGroup = eventsByDay.keys().next().value
-            return firstDateInGroup
-        }
-        eventDays = eventDays.map((localDate) => getFirstDate(localDate).valueOf())
-        eventDays.sort()
-        eventDays = eventDays.map((localDate) => getLocaleDayDisplay(new Date(localDate)))
-        return eventDays
+    const getSortedDays = (eventsByDay) => {
+        return Array.from(eventsByDay.keys()).sort()
     }
 
     let eventItems = []
     let eventsByDay = groupEventsByDay()
-    let eventDays = getUniqueDays(eventsByDay)
 	eventDetails.subscribe(value => {
 		eventItems = value;
         eventsByDay = groupEventsByDay()
-        eventDays = getUniqueDays(eventsByDay)
+        console.log(eventsByDay)
 	});
 
     const getLocalTime = (date) => {
@@ -71,8 +72,8 @@
     </div>
 
     <div class="events">
-    	{#each eventDays as eventDay}
-    		<h4>{eventDay}</h4>
+    	{#each getSortedDays(eventsByDay) as eventDay}
+    		<h4>{getLocaleDayDisplay(eventDay)}</h4>
             {#each Array.from(eventsByDay.get(eventDay)) as event}
                 <div class="event-listing {$currentTime ? getClassTypeForEvent(event) : ''}">
                     <span class="event-time">
