@@ -13,7 +13,6 @@
     <div class="staff-user-details">
         {#each Array.from(userData) as user}
             <div class="staff-info">
-                <img src={user.icon} alt="User icon for {user.name}"/>
                 <div>
                     <div class="staff-user-name">{user.name}</div>
                     <div>{user.email}</div>
