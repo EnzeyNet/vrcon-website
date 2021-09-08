@@ -4,7 +4,6 @@
     import WorldListCard from './WorldListCard.svelte'
     import ScheduleCard from './ScheduleCard.svelte'
     import AboutCard from './AboutCard.svelte'
-    import StaffCard from './StaffCard.svelte'
 </script>
 
 <div>
@@ -20,9 +19,6 @@
     </div>
     <div class="section-link" id="card-about">
         <AboutCard />
-    </div>
-    <div class="section-link" id="card-contacts">
-        <StaffCard />
     </div>
 </div>
 

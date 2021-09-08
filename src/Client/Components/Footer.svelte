@@ -1,13 +1,19 @@
 <script>
 
-import Icon from 'svelte-awesome';
-import {
-    faDiscord,
-    faYoutube,
-    faTwitch,
-    faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
+    import Icon from 'svelte-awesome';
+    import {
+        faDiscord,
+        faYoutube,
+        faTwitch,
+        faTwitter,
+    } from '@fortawesome/free-brands-svg-icons'
 
+    import { staffDetails } from '../dataStore.js'
+
+    let userData = []
+    staffDetails.subscribe(value => {
+        userData = value;
+    });
 </script>
 
 <div class="socialsFooter container-fluid">
@@ -33,6 +39,20 @@ import {
         </div>
     </div>
 
+    <div class="staff-list">
+        <h3>Contacts</h3>
+
+        <div class="staff-user-details footer-list">
+            {#each Array.from(userData) as user}
+                <div class="staff-info">
+                    <div>
+                        <div class="staff-user-name">{user.name}</div>
+                        <div>{user.email}</div>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </div>
 
     <div class="logos">
         <div class="logo-vrchat">
@@ -129,5 +149,30 @@ import {
     }
     .logo-vrcon img {
         width: 100%;
+    }
+
+    .staff-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .staff-user-details {
+        padding: 0 0 2em 0;
+    }
+    .staff-info {
+        padding: 0 2em 1em 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    .staff-info img {
+        height: 3em;
+        width: 3em;
+        margin: 0 1em 0 0;
+        border-radius: 30%;
+    }
+    .staff-user-name {
+        font-size: 1.1em;
     }
 </style>
