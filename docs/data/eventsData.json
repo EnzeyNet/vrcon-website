@@ -437,7 +437,6 @@
         "name": "VR dance showcase by the SXSW2021 champion YOIKAMI",
         "joinOn": "VRCon1",
         "hostedBy": "Yoikami",
-        "isQuestCompatible": true,
         "description": "A dance performance by Yoikami."
     },
     {
@@ -503,7 +502,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "CyberChimp",
         "liveStreamHost": "cyberchimptv",
-        "isQuestCompatible": true,
         "description": "CyberChimp showcase some of his greatest performance avatars. You're sure to catch some laughs here!"
     },
     {
