@@ -139,13 +139,20 @@
     },
     {
         "timeStart": "2021-09-10T14:00-04:00",
+        "timeEnd":   "2021-09-10T15:00-04:00",
+        "name": "UHR - MilSim in VRChat",
+        "hostedBy": "VRCon",
+        "description": "Learn about the UHR community! They will be explaining the creative and interactive process in which players fight against Combat Ai in VR in an ongoing story, as well as offering tours of our worlds and some free avatars for you to keep! If you are interested in MilSim, military-roleplay, or other related topics, come stop by and say hello!"
+    },
+    {
+        "timeStart": "2021-09-10T14:00-04:00",
         "timeEnd":   "2021-09-10T16:00-04:00",
         "name": "Pool Tournament",
         "liveStreamHost": "VRConlive",
         "hostedBy": "VRCon",
         "signUp": "https://smash.gg/vrconpool",
         "isQuestCompatible": true,
-        "description": "Learn about the UHR community! They will be explaining the creative and interactive process in which players fight against Combat Ai in VR in an ongoing story, as well as offering tours of our worlds and some free avatars for you to keep! If you are interested in MilSim, military-roleplay, or other related topics, come stop by and say hello!"
+        "description": "Attendees will participate in a 2v2 Lightning Round 8-ball pool tournament which will be capped at 64 players."
     },
     {
         "timeStart": "2021-09-10T16:00-04:00",
