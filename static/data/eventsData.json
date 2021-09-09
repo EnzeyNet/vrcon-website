@@ -31,7 +31,6 @@
         "joinOn": "VRCon1",
         "liveStreamHost": "VRConlive",
         "hostedBy": "AstroRabbit",
-        "isQuestCompatible": true,
         "description": "Join AstroRabbit's talk about their experiences in teaching STEM topics in VRChat."
     },
     {
@@ -41,7 +40,6 @@
         "joinOn": "VRCon2",
         "liveStreamHost": "VRConlive",
         "hostedBy": "Air In",
-        "isQuestCompatible": true,
         "description": "A talk about world optimization by Air In."
     },
     {
@@ -49,7 +47,8 @@
         "timeEnd":   "2021-09-10T03:00-04:00",
         "name": "Opening Party",
         "hostedBy": "VRCon",
-        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful experience with old and new friends you meet through music in our three-day nightly parties."
+        "isQuestCompatible": true,
+        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful experience with old and new friends you meet through music in our three-day nightly parties. Artists - Hadean, 10xx, KawaiiClub, BloodCode, & Eberstark"
     },
     {
         "timeStart": "2021-09-10T03:00-04:00",
@@ -135,8 +134,7 @@
         "timeEnd":   "2021-09-10T15:00-04:00",
         "name": "Two Events in one! New Player Meetup / Mini Intro To VRChat",
         "joinOn": "VRCon2",
-        "hostedBy": "PeaParty",
-        "isQuestCompatible": true,
+        "hostedBy": "VRCon",
         "description": "Introducing new players to VRChat, what to expect and what it has to offer. Showing quest compatible/optimized maps to the new players."
     },
     {
@@ -144,10 +142,10 @@
         "timeEnd":   "2021-09-10T16:00-04:00",
         "name": "Pool Tournament",
         "liveStreamHost": "VRConlive",
-        "hostedBy": "SoldnerX",
+        "hostedBy": "VRCon",
         "signUp": "https://smash.gg/vrconpool",
         "isQuestCompatible": true,
-        "description": "Attendees will participate in a 2v2 Lightning Round 8-ball pool tournament which will be capped at 64 players."
+        "description": "Learn about the UHR community! They will be explaining the creative and interactive process in which players fight against Combat Ai in VR in an ongoing story, as well as offering tours of our worlds and some free avatars for you to keep! If you are interested in MilSim, military-roleplay, or other related topics, come stop by and say hello!"
     },
     {
         "timeStart": "2021-09-10T16:00-04:00",
@@ -184,15 +182,15 @@
         "joinOn": "VRCon1",
         "hostedBy": "Jowbowl, Sugarcoated Witch, and Satchi",
         "liveStreamHost": "jowlbowl",
-        "isQuestCompatible": true,
         "description": "A general 'How to roleplay' mixed with interviews from the heads of the most prominent open VRCRoleplay groups such as Purple Lotus, Misty Shores, and Dream Tree. Followed by an improv show with plenty of audience participation!"
     },
     {
-        "timeStart": "2021-09-10T23:00-04:00",
+        "timeStart": "2021-09-10T22:30-04:00",
         "timeEnd":   "2021-09-11T03:00-04:00",
-        "name": "Opening Party",
+        "name": "After Party",
+        "isQuestCompatible": true,
         "hostedBy": "VRCon",
-        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful memories with old and new friends you meet through music in our three-day nightly parties."
+        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful memories with old and new friends you meet through music in our three-day nightly parties. Artists - Pearl Grey, Balyena, Creep-P,  Phantex, &  LastBreaths"
     },
     {
         "timeStart": "2021-09-11T03:00-04:00",
@@ -276,7 +274,6 @@
         "joinOn": "VRCon2",
         "hostedBy": "Fearlesskoolaid",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "Learn the Dos and Don'ts of Deaf culture with Fearlesskoolaid!"
     },
     {
@@ -286,7 +283,6 @@
         "joinOn": "SquatBot",
         "hostedBy": "Doublegoose & 1029Chris",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "Stay healthy as we squat the Saturday away together. Don't forget to bring water!"
     },
     {
@@ -296,7 +292,6 @@
         "joinOn": "VRCon2",
         "hostedBy": "Naku",
         "liveStreamHost": "im_naku",
-        "isQuestCompatible": true,
         "description": "Performance set list including piano, live vocals, backing tracks, etc."
     },
     {
@@ -306,7 +301,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "AdzySlayer",
         "liveStreamHost": "adzyslayer",
-        "isQuestCompatible": true,
         "description": "Enjoy AdzySlayer's 30-minute set of pure guitar shredding!"
     },
     {
@@ -350,7 +344,6 @@
         "name": "Talent Show",
         "liveStreamHost": "VRConlive",
         "hostedBy": "SoldnerX Kuro",
-        "isQuestCompatible": true,
         "signUp": "https://forms.gle/FBVKiX9YMKpSejLT7",
         "description": "Show off  your crazy, impressive, or wacky Talents and avatars!"
     },
@@ -369,7 +362,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "Archantos",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "A routine involving deep warmup and stretching, followed by mixed strength and technique pole dance training."
     },
     {
@@ -383,9 +375,10 @@
     {
         "timeStart": "2021-09-11T22:30-04:00",
         "timeEnd":   "2021-09-12T03:00-04:00",
-        "name": "Party",
+        "name": "After Party",
         "hostedBy": "VRCon",
-        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful memories with old and new friends you meet through music in our three-day nightly parties."
+        "isQuestCompatible": true,
+        "description": "After a long day of exploring, come dance and vibe with us! As our lineup hosts a variety of incredible artists. Experience a bit of the virtual rave scene and create wonderful memories with old and new friends you meet through music in our three-day nightly parties. Artists - Silent Antagonist, W.T.Snacks, Narshwhal, Azarya, & MissStabby"
     },
     {
         "timeStart": "2021-09-12T03:00-04:00",
@@ -411,6 +404,7 @@
         "name": "Werewolf",
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
+        "isQuestCompatible": true,
         "description": "Some within your village are not what they seem to be. Can you work together with the other villagers to discover the werewolves before it's too late?"
     },
     {
@@ -464,7 +458,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "VRCon",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "Grab your popcorn and settle in as we watch submissions to the VRCon Film Festival!"
     },
     {
@@ -521,7 +514,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "The VRChat Movie Team",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "Q & A For the VRChat Movie."
     },
     {
@@ -531,7 +523,6 @@
         "joinOn": "VRCon2",
         "hostedBy": "AK0 from StressLevelZero",
         "liveStreamHost": "VRConlive",
-        "isQuestCompatible": true,
         "description": "A speculative roadmap from VR now to living entirely virtual. Tech timeline, Social change, & Economic impact."
     },
     {
@@ -541,7 +532,6 @@
         "joinOn": "VRCon1",
         "hostedBy": "DustBunny",
         "liveStreamHost": "dustydustbunny",
-        "isQuestCompatible": true,
         "description": "Introductory lesson on how to belly dance in VR."
     },
     {
