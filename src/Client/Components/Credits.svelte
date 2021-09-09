@@ -7,6 +7,7 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 </script>
 
 <div class="credits">
+    <div>Web Design by PeaceLight</div>
     <div>Website developed by Enzey</div>
     <div>Build with <a href="https://svelte.dev/">Svelte</a></div>
     <div class="contacts">
