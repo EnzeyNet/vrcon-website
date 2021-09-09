@@ -13,7 +13,6 @@
         time -= timezoneOffset
         time -= time % millisecondsOfDay
         time += timezoneOffset
-        console.log(new Date(time).toISOString())
         return time
     }
     const groupEventsByDay = () => {
@@ -34,7 +33,6 @@
 	eventDetails.subscribe(value => {
 		eventItems = value;
         eventsByDay = groupEventsByDay()
-        console.log(eventsByDay)
 	});
 
     const getLocalTime = (date) => {

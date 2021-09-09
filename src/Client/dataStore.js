@@ -31,7 +31,6 @@ setInterval(
 
 const parseDate = (str) => {
     const d = parseISO(str)
-    console.log(`${str} parsed to ${d.toTimeString()}`)
     if (isNaN(d.valueOf()) || d.valueOf() !== d.getTime()) {
         console.error(`failed to parse date: ${str}`)
     }
@@ -49,7 +48,7 @@ const parseDate = (str) => {
             }
             eventDetails.set(events)
         } else {
-            console.log('failed to load event data')
+            console.error('failed to load event data')
         }
     } catch (e) {
         console.error(e)
