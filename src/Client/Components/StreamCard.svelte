@@ -14,6 +14,7 @@
     const getCurrentHostedStream = (currentTime) => {
         let currentStreamHost = null
         for (const event of hostedEvents) {
+            console.log(event.timeStart)
             const eventStartTime = event.timeStart.valueOf()
             const eventEndTime = event.timeEnd.valueOf()
             if (eventStartTime <= currentTime && currentTime < eventEndTime) {
@@ -21,7 +22,11 @@
             }
         }
     }
+
     $: currentHostedEvent = getCurrentHostedStream($currentTime)
+    eventDetails.subscribe(value => {
+        currentHostedEvent = getCurrentHostedStream($currentTime)
+    });
 
     const hostname = window.location.hostname
 
