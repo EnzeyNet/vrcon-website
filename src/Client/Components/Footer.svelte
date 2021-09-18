@@ -45,6 +45,7 @@
         <div class="staff-user-details footer-list">
             {#each Array.from(userData) as user}
                 <div class="staff-info">
+                    <img src={user.icon} alt={`${user.name} user icon`}>
                     <div>
                         <div class="staff-user-name">{user.name}</div>
                         <div>{user.email}</div>
