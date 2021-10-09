@@ -3,28 +3,31 @@
     import StreamCard from './StreamCard.svelte'
     import WorldListCard from './WorldListCard.svelte'
     import ScheduleCard from './ScheduleCard.svelte'
+    import SpecialEventDetails from './SpecialEventDetails.svelte'
     import AboutCard from './AboutCard.svelte'
 </script>
 
 <div>
     <SplashCard />
-    <div class="section-link" id="card-stream">
+    <div id="card-stream">
         <StreamCard />
     </div>
-    <div class="section-link" id="card-events">
+    <div id="card-events">
         <ScheduleCard />
     </div>
-    <div class="section-link" id="card-worldlist">
+    <div id="special-event-details">
+        <SpecialEventDetails />
+    </div>
+    <div id="card-worldlist">
         <WorldListCard />
     </div>
-    <div class="section-link" id="card-about">
+    <div id="card-about">
         <AboutCard />
     </div>
 </div>
 
 <style>
-    .section-link {
-        margin-top: -2.5em;
-        padding-top: 2.5em;
+    #special-event-details {
+        background-color: black;
     }
 </style>

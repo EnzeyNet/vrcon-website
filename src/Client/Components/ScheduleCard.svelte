@@ -60,55 +60,57 @@
 
 </script>
 
-<div class="container">
-    <h2>Schedule</h2>
-    <div class="event-time-message">Event times are displayed in user local time</div>
-    <div class="event-disclaimer-title">Disclaimer</div>
-    <div class="event-disclaimer-body">
-        <div>VRCon events are free but may have limited capacity and admission is first come first serve.</div>
-        <div>Please wear a medium or better performing avatar!</div>
-    </div>
+{#if eventsByDay.keys().size}
+    <div class="container">
+        <h2>Schedule</h2>
+        <div class="event-time-message">Event times are displayed in user local time</div>
+        <div class="event-disclaimer-title">Disclaimer</div>
+        <div class="event-disclaimer-body">
+            <div>VRCon events are free but may have limited capacity and admission is first come first serve.</div>
+            <div>Please wear a medium or better performing avatar!</div>
+        </div>
 
-    <div class="events">
-    	{#each getSortedDays(eventsByDay) as eventDay}
-    		<h4>{getLocaleDayDisplay(eventDay)}</h4>
-            {#each Array.from(eventsByDay.get(eventDay)) as event}
-                <div class="event-listing {$currentTime ? getClassTypeForEvent(event) : ''}">
-                    <span class="event-time">
-                        <div>{getLocalTime(event.timeStart)}</div>
-                        {#if event.liveStreamHost}
-                            <div class="event-stream-details">Streamed by</div>
-                            <div class="event-stream-details">
-                                <a href="{`https://twitch.tv/${event.liveStreamHost}`}">
-                                    <span>{event.liveStreamHost}</span>
-                                </a>
+        <div class="events">
+        	{#each getSortedDays(eventsByDay) as eventDay}
+        		<h4>{getLocaleDayDisplay(eventDay)}</h4>
+                {#each Array.from(eventsByDay.get(eventDay)) as event}
+                    <div class="event-listing {$currentTime ? getClassTypeForEvent(event) : ''}">
+                        <span class="event-time">
+                            <div>{getLocalTime(event.timeStart)}</div>
+                            {#if event.liveStreamHost}
+                                <div class="event-stream-details">Streamed by</div>
+                                <div class="event-stream-details">
+                                    <a href="{`https://twitch.tv/${event.liveStreamHost}`}">
+                                        <span>{event.liveStreamHost}</span>
+                                    </a>
+                                </div>
+                            {/if}
+                        </span>
+                        <span class="event-spacer"></span>
+                        <span class="event-name">
+                            <div>{event.name}</div>
+                            <div class="event-description">{event.description}</div>
+                            <div class="event-joinable">
+                                {#if event.hostedBy}
+                                    <div class="event-host-details">Hosted by {event.hostedBy}</div>
+                                {/if}
+                                {#if event.signUp}
+                                    <div class="event-host-details">Sign up <a href={event.signUp}>here</a> to join the event</div>
+                                {/if}
+                                {#if event.joinOn}
+                                    <div class="event-host-details">Join on <a href={$eventHostLinks[event.joinOn]}>{event.joinOn}</a></div>
+                                {/if}
+                                {#if event.isQuestCompatible}
+                                    <div class="event-quest-compatible">Quest Supported</div>
+                                {/if}
                             </div>
-                        {/if}
-                    </span>
-                    <span class="event-spacer"></span>
-                    <span class="event-name">
-                        <div>{event.name}</div>
-                        <div class="event-description">{event.description}</div>
-                        <div class="event-joinable">
-                            {#if event.hostedBy}
-                                <div class="event-host-details">Hosted by {event.hostedBy}</div>
-                            {/if}
-                            {#if event.signUp}
-                                <div class="event-host-details">Sign up <a href={event.signUp}>here</a> to join the event</div>
-                            {/if}
-                            {#if event.joinOn}
-                                <div class="event-host-details">Join on <a href={$eventHostLinks[event.joinOn]}>{event.joinOn}</a></div>
-                            {/if}
-                            {#if event.isQuestCompatible}
-                                <div class="event-quest-compatible">Quest Supported</div>
-                            {/if}
-                        </div>
-                    </span>
-                </div>
+                        </span>
+                    </div>
+            	{/each}
         	{/each}
-    	{/each}
+        </div>
     </div>
-</div>
+{/if}
 
 <style>
     h2 {
