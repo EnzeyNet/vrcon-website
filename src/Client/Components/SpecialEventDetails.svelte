@@ -5,7 +5,7 @@
     <h2>What is Scaretacular?</h2>
     <p>ScareTakular is an event where we will be accepting avatar and world submissions from VRC creators to be judged by our panel of judges! Submissions for this event start right now and will end on October 21st. On October 22nd through the 29th we will be judging your submissions and the winners of each category will be revealed on the 30th of October during our awards ceremony which will be streamed on twitch.tv/vrconlive!</p>
 
-    <h2>What is Scaretacular?</h2>
+    <h2>What Categories can I win?</h2>
     <div class="details">
         <h3>For World Creators:</h3>
         <ul>

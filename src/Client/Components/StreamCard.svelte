@@ -86,6 +86,7 @@
     }
     .contentBox {
         padding: 0.5em 0 3em 0;
+        z-index: 0;
     }
     h2 {
         padding: 0;
