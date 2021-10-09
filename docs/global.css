@@ -6,6 +6,7 @@
     --color-web-white: hsl(204, 33%, 97%);
     --color-web-dark:  hsl(240, 100%, 10%);
     --color-web-dull:  hsl(353, 7%, 24%);
+    --color-web-special-event:  hsl(13, 87%, 53%);
 }
 
 :root .warm {
