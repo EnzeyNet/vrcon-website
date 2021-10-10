@@ -71,7 +71,7 @@
         background-size: cover;
         background-position: bottom center;
 
-        padding: 2em 0 calc(2em + 2em) 0;
+        padding: 2em 0 2em 0;
         display: flex;
         position: relative;
         justify-content: center;

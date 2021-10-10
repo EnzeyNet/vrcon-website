@@ -9,25 +9,30 @@
 
 <div>
     <SplashCard />
-    <div id="card-stream">
+    <div class="section" id="card-stream">
         <StreamCard />
     </div>
-    <div id="card-events">
+    <div class="section" id="card-events">
         <ScheduleCard />
     </div>
-    <div id="special-event-details">
+    <div class="section" id="card-special-event-details">
         <SpecialEventDetails />
     </div>
-    <div id="card-worldlist">
+    <div class="section" id="card-worldlist">
         <WorldListCard />
     </div>
-    <div id="card-about">
+    <div class="section" id="card-about">
         <AboutCard />
     </div>
 </div>
 
 <style>
-    #special-event-details {
+    .section {
+        margin-top: -2.5em;
+        padding-top: 2.5em;
+    }
+
+    #card-special-event-details {
         background-color: black;
     }
 </style>
