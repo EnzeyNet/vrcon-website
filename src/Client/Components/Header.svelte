@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse {isNavExpanded ? 'show' : ''}" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#card-stream">Stream</a>
+                        <a class="nav-link" href="#card-stream">Trailer</a>
                     </li>
                     <!--
                     <li class="nav-item">
@@ -37,7 +37,7 @@
                     </li>
                     -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#card-special-event-details">Scaretacular</a>
+                        <a class="nav-link" href="#card-special-event-details">Event</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#card-worldlist">World List</a>
