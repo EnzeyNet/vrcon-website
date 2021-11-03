@@ -35,10 +35,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#card-events">Schedule</a>
                     </li>
-                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="#card-special-event-details">Event</a>
                     </li>
+                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="#card-worldlist">World List</a>
                     </li>

@@ -3,7 +3,6 @@
     import StreamCard from './StreamCard.svelte'
     import WorldListCard from './WorldListCard.svelte'
     import ScheduleCard from './ScheduleCard.svelte'
-    import SpecialEventDetails from './SpecialEventDetails.svelte'
     import AboutCard from './AboutCard.svelte'
 </script>
 
@@ -14,9 +13,6 @@
     </div>
     <div class="section" id="card-events">
         <ScheduleCard />
-    </div>
-    <div class="section" id="card-special-event-details">
-        <SpecialEventDetails />
     </div>
     <div class="section" id="card-worldlist">
         <WorldListCard />

@@ -5,7 +5,7 @@
     <div class="date">2021</div>
 </div>
 -->
-<img src="/images/splash_image_spooky.png" alt="VRCon intro logo">
+<img src="/images/splash_image_fall.png" alt="VRCon intro logo">
 <style>
     .SplashCard {
         display: flex;
@@ -16,7 +16,7 @@
         background: gray;
         display: flex;
         flex-direction: column-reverse;
-        background-image: url('../images/splash_image_spooky.png');
+        background-image: url('../images/splash_image_fall.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

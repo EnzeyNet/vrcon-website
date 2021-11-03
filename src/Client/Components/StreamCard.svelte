@@ -32,7 +32,7 @@
 
     // Video: https://www.youtube.com/watch?v=CTYUyBxQ9SU
     const refFrom = '' + window.location.protocol + '//' + hostname
-    const youtubeVideoId = 'lx1w5JqLAbA'
+    const youtubeVideoId = 'CTYUyBxQ9SU'
     const youtubeIntroLink = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&origin=${refFrom}`
 
 </script>
@@ -66,7 +66,7 @@
 
 <style>
     .StreamCard {
-        background-image: url('../images/webbing-dark.png');
+        background-image: url('../images/webbing.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
